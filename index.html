@@ -1,0 +1,1843 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)file:///c%3A/UCSC/Portfolio/pamali.html#research -->
+<html lang="en" class="dark scroll-smooth"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pamali Weerasinghe | AI Security, Distributed Systems &amp; Software Engineering Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="./pamali_files/css2" rel="stylesheet">
+  <script src="./pamali_files/3.4.17"></script>
+  <script src="./pamali_files/chart.umd.min.js.download"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            serif: ['Newsreader', 'Georgia', 'serif'],
+            mono: ['JetBrains Mono', 'monospace']
+          },
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              100: '#e0e7ff',
+              200: '#c7d2fe',
+              300: '#a5b4fc',
+              400: '#818cf8',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+              800: '#3730a3',
+              900: '#312e81'
+            }
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    }
+    .font-editorial {
+      font-family: 'Newsreader', Georgia, serif;
+    }
+    .font-code {
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .glass-panel {
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+    .grid-bg {
+      background-size: 32px 32px;
+      background-image: 
+        linear-gradient(to right, rgba(99, 102, 241, 0.06) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(99, 102, 241, 0.06) 1px, transparent 1px);
+    }
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: rgba(15, 23, 42, 0.4);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(99, 102, 241, 0.4);
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgba(99, 102, 241, 0.7);
+    }
+  </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:Inter, system-ui, sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:JetBrains Mono, monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0px}.-bottom-24{bottom:-6rem}.-left-24{left:-6rem}.-right-24{right:-6rem}.-top-24{top:-6rem}.bottom-5{bottom:1.25rem}.left-3{left:0.75rem}.right-5{right:1.25rem}.top-0{top:0px}.top-2\.5{top:0.625rem}.z-10{z-index:10}.z-40{z-index:40}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:0.25rem}.mt-0\.5{margin-top:0.125rem}.mt-1{margin-top:0.25rem}.mt-1\.5{margin-top:0.375rem}.mt-12{margin-top:3rem}.mt-2{margin-top:0.5rem}.mt-8{margin-top:2rem}.block{display:block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-1\.5{height:0.375rem}.h-16{height:4rem}.h-2{height:0.5rem}.h-2\.5{height:0.625rem}.h-3\.5{height:0.875rem}.h-4{height:1rem}.h-5{height:1.25rem}.h-64{height:16rem}.h-9{height:2.25rem}.h-96{height:24rem}.max-h-\[70vh\]{max-height:70vh}.min-h-screen{min-height:100vh}.w-1\.5{width:0.375rem}.w-2{width:0.5rem}.w-2\.5{width:0.625rem}.w-3\.5{width:0.875rem}.w-4{width:1rem}.w-5{width:1.25rem}.w-9{width:2.25rem}.w-96{width:24rem}.w-full{width:100%}.max-w-2xl{max-width:42rem}.max-w-3xl{max-width:48rem}.max-w-7xl{max-width:80rem}.shrink-0{flex-shrink:0}.scroll-mt-20{scroll-margin-top:5rem}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.items-stretch{align-items:stretch}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:0.25rem}.gap-1\.5{gap:0.375rem}.gap-2{gap:0.5rem}.gap-2\.5{gap:0.625rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-5{gap:1.25rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-y-1 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.25rem * var(--tw-space-y-reverse))}.space-y-1\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.375rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.375rem * var(--tw-space-y-reverse))}.space-y-16 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(4rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(4rem * var(--tw-space-y-reverse))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-2\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.625rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.625rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.25rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.overflow-y-auto{overflow-y:auto}.scroll-smooth{scroll-behavior:smooth}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-3xl{border-radius:1.5rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-md{border-radius:0.375rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-amber-500\/15{border-color:rgb(245 158 11 / 0.15)}.border-amber-500\/20{border-color:rgb(245 158 11 / 0.2)}.border-emerald-500\/20{border-color:rgb(16 185 129 / 0.2)}.border-indigo-500\/15{border-color:rgb(99 102 241 / 0.15)}.border-indigo-500\/20{border-color:rgb(99 102 241 / 0.2)}.border-indigo-500\/30{border-color:rgb(99 102 241 / 0.3)}.border-slate-200{--tw-border-opacity:1;border-color:rgb(226 232 240 / var(--tw-border-opacity, 1))}.border-slate-200\/60{border-color:rgb(226 232 240 / 0.6)}.border-slate-200\/70{border-color:rgb(226 232 240 / 0.7)}.border-slate-200\/80{border-color:rgb(226 232 240 / 0.8)}.border-slate-700{--tw-border-opacity:1;border-color:rgb(51 65 85 / var(--tw-border-opacity, 1))}.border-teal-500\/15{border-color:rgb(20 184 166 / 0.15)}.border-teal-500\/20{border-color:rgb(20 184 166 / 0.2)}.border-amber-500\/30{border-color:rgb(245 158 11 / 0.3)}.border-slate-200\/50{border-color:rgb(226 232 240 / 0.5)}.bg-amber-500{--tw-bg-opacity:1;background-color:rgb(245 158 11 / var(--tw-bg-opacity, 1))}.bg-amber-500\/10{background-color:rgb(245 158 11 / 0.1)}.bg-amber-500\/15{background-color:rgb(245 158 11 / 0.15)}.bg-amber-500\/5{background-color:rgb(245 158 11 / 0.05)}.bg-emerald-500{--tw-bg-opacity:1;background-color:rgb(16 185 129 / var(--tw-bg-opacity, 1))}.bg-emerald-500\/10{background-color:rgb(16 185 129 / 0.1)}.bg-indigo-500{--tw-bg-opacity:1;background-color:rgb(99 102 241 / var(--tw-bg-opacity, 1))}.bg-indigo-500\/10{background-color:rgb(99 102 241 / 0.1)}.bg-indigo-500\/15{background-color:rgb(99 102 241 / 0.15)}.bg-indigo-500\/5{background-color:rgb(99 102 241 / 0.05)}.bg-indigo-600{--tw-bg-opacity:1;background-color:rgb(79 70 229 / var(--tw-bg-opacity, 1))}.bg-slate-100{--tw-bg-opacity:1;background-color:rgb(241 245 249 / var(--tw-bg-opacity, 1))}.bg-slate-100\/80{background-color:rgb(241 245 249 / 0.8)}.bg-slate-50{--tw-bg-opacity:1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}.bg-slate-900{--tw-bg-opacity:1;background-color:rgb(15 23 42 / var(--tw-bg-opacity, 1))}.bg-slate-950\/70{background-color:rgb(2 6 23 / 0.7)}.bg-teal-500{--tw-bg-opacity:1;background-color:rgb(20 184 166 / var(--tw-bg-opacity, 1))}.bg-teal-500\/10{background-color:rgb(20 184 166 / 0.1)}.bg-teal-500\/5{background-color:rgb(20 184 166 / 0.05)}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/85{background-color:rgb(255 255 255 / 0.85)}.bg-white\/90{background-color:rgb(255 255 255 / 0.9)}.bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}.from-indigo-600{--tw-gradient-from:#4f46e5 var(--tw-gradient-from-position);--tw-gradient-to:rgb(79 70 229 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-indigo-950\/20{--tw-gradient-from:rgb(30 27 75 / 0.2) var(--tw-gradient-from-position);--tw-gradient-to:rgb(30 27 75 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-indigo-500{--tw-gradient-to:rgb(99 102 241 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #6366f1 var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-white{--tw-gradient-to:rgb(255 255 255 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #fff var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-teal-500{--tw-gradient-to:#14b8a6 var(--tw-gradient-to-position)}.to-teal-950\/10{--tw-gradient-to:rgb(4 47 46 / 0.1) var(--tw-gradient-to-position)}.p-0\.5{padding:0.125rem}.p-1\.5{padding:0.375rem}.p-2{padding:0.5rem}.p-2\.5{padding:0.625rem}.p-3{padding:0.75rem}.p-3\.5{padding:0.875rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.px-1\.5{padding-left:0.375rem;padding-right:0.375rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-3\.5{padding-left:0.875rem;padding-right:0.875rem}.px-4{padding-left:1rem;padding-right:1rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-8{padding-top:2rem;padding-bottom:2rem}.pb-3{padding-bottom:0.75rem}.pb-4{padding-bottom:1rem}.pb-5{padding-bottom:1.25rem}.pl-9{padding-left:2.25rem}.pr-1{padding-right:0.25rem}.pr-3{padding-right:0.75rem}.pt-1{padding-top:0.25rem}.pt-2{padding-top:0.5rem}.pt-6{padding-top:1.5rem}.pb-2\.5{padding-bottom:0.625rem}.pt-4{padding-top:1rem}.text-center{text-align:center}.font-mono{font-family:JetBrains Mono, monospace}.font-sans{font-family:Inter, system-ui, sans-serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-normal{font-weight:400}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.italic{font-style:italic}.leading-none{line-height:1}.leading-relaxed{line-height:1.625}.leading-snug{line-height:1.375}.tracking-tight{letter-spacing:-0.025em}.tracking-wider{letter-spacing:0.05em}.tracking-widest{letter-spacing:0.1em}.text-amber-400{--tw-text-opacity:1;color:rgb(251 191 36 / var(--tw-text-opacity, 1))}.text-amber-500{--tw-text-opacity:1;color:rgb(245 158 11 / var(--tw-text-opacity, 1))}.text-amber-600{--tw-text-opacity:1;color:rgb(217 119 6 / var(--tw-text-opacity, 1))}.text-amber-800{--tw-text-opacity:1;color:rgb(146 64 14 / var(--tw-text-opacity, 1))}.text-emerald-600{--tw-text-opacity:1;color:rgb(5 150 105 / var(--tw-text-opacity, 1))}.text-emerald-700{--tw-text-opacity:1;color:rgb(4 120 87 / var(--tw-text-opacity, 1))}.text-indigo-500{--tw-text-opacity:1;color:rgb(99 102 241 / var(--tw-text-opacity, 1))}.text-indigo-600{--tw-text-opacity:1;color:rgb(79 70 229 / var(--tw-text-opacity, 1))}.text-indigo-700{--tw-text-opacity:1;color:rgb(67 56 202 / var(--tw-text-opacity, 1))}.text-sky-600{--tw-text-opacity:1;color:rgb(2 132 199 / var(--tw-text-opacity, 1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105 / var(--tw-text-opacity, 1))}.text-slate-700{--tw-text-opacity:1;color:rgb(51 65 85 / var(--tw-text-opacity, 1))}.text-slate-800{--tw-text-opacity:1;color:rgb(30 41 59 / var(--tw-text-opacity, 1))}.text-slate-900{--tw-text-opacity:1;color:rgb(15 23 42 / var(--tw-text-opacity, 1))}.text-teal-600{--tw-text-opacity:1;color:rgb(13 148 136 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-amber-700{--tw-text-opacity:1;color:rgb(180 83 9 / var(--tw-text-opacity, 1))}.underline{-webkit-text-decoration-line:underline;text-decoration-line:underline}.opacity-75{opacity:0.75}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-indigo-500\/20{--tw-shadow-color:rgb(99 102 241 / 0.2);--tw-shadow:var(--tw-shadow-colored)}.shadow-indigo-600\/20{--tw-shadow-color:rgb(79 70 229 / 0.2);--tw-shadow:var(--tw-shadow-colored)}.shadow-slate-900\/5{--tw-shadow-color:rgb(15 23 42 / 0.05);--tw-shadow:var(--tw-shadow-colored)}.blur-3xl{--tw-blur:blur(64px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-200{transition-duration:200ms}.selection\:bg-indigo-500 *::selection{--tw-bg-opacity:1;background-color:rgb(99 102 241 / var(--tw-bg-opacity, 1))}.selection\:text-white *::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.selection\:bg-indigo-500::selection{--tw-bg-opacity:1;background-color:rgb(99 102 241 / var(--tw-bg-opacity, 1))}.selection\:text-white::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:border-indigo-400:hover{--tw-border-opacity:1;border-color:rgb(129 140 248 / var(--tw-border-opacity, 1))}.hover\:border-indigo-500:hover{--tw-border-opacity:1;border-color:rgb(99 102 241 / var(--tw-border-opacity, 1))}.hover\:border-indigo-500\/50:hover{border-color:rgb(99 102 241 / 0.5)}.hover\:bg-indigo-500:hover{--tw-bg-opacity:1;background-color:rgb(99 102 241 / var(--tw-bg-opacity, 1))}.hover\:bg-indigo-500\/20:hover{background-color:rgb(99 102 241 / 0.2)}.hover\:bg-slate-100:hover{--tw-bg-opacity:1;background-color:rgb(241 245 249 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-200:hover{--tw-bg-opacity:1;background-color:rgb(226 232 240 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-800:hover{--tw-bg-opacity:1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.hover\:bg-indigo-600:hover{--tw-bg-opacity:1;background-color:rgb(79 70 229 / var(--tw-bg-opacity, 1))}.hover\:text-indigo-400:hover{--tw-text-opacity:1;color:rgb(129 140 248 / var(--tw-text-opacity, 1))}.hover\:text-indigo-500:hover{--tw-text-opacity:1;color:rgb(99 102 241 / var(--tw-text-opacity, 1))}.hover\:text-indigo-600:hover{--tw-text-opacity:1;color:rgb(79 70 229 / var(--tw-text-opacity, 1))}.hover\:text-slate-700:hover{--tw-text-opacity:1;color:rgb(51 65 85 / var(--tw-text-opacity, 1))}.hover\:text-slate-900:hover{--tw-text-opacity:1;color:rgb(15 23 42 / var(--tw-text-opacity, 1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:underline:hover{-webkit-text-decoration-line:underline;text-decoration-line:underline}.focus\:border-indigo-500:focus{--tw-border-opacity:1;border-color:rgb(99 102 241 / var(--tw-border-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.group:hover .group-hover\:scale-105{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.dark\:block:is(.dark *){display:block}.dark\:hidden:is(.dark *){display:none}.dark\:border-slate-700:is(.dark *){--tw-border-opacity:1;border-color:rgb(51 65 85 / var(--tw-border-opacity, 1))}.dark\:border-slate-800:is(.dark *){--tw-border-opacity:1;border-color:rgb(30 41 59 / var(--tw-border-opacity, 1))}.dark\:border-slate-800\/80:is(.dark *){border-color:rgb(30 41 59 / 0.8)}.dark\:border-slate-800\/90:is(.dark *){border-color:rgb(30 41 59 / 0.9)}.dark\:border-slate-800\/50:is(.dark *){border-color:rgb(30 41 59 / 0.5)}.dark\:bg-slate-800:is(.dark *){--tw-bg-opacity:1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.dark\:bg-slate-800\/70:is(.dark *){background-color:rgb(30 41 59 / 0.7)}.dark\:bg-slate-900:is(.dark *){--tw-bg-opacity:1;background-color:rgb(15 23 42 / var(--tw-bg-opacity, 1))}.dark\:bg-slate-900\/80:is(.dark *){background-color:rgb(15 23 42 / 0.8)}.dark\:bg-slate-900\/90:is(.dark *){background-color:rgb(15 23 42 / 0.9)}.dark\:bg-slate-950:is(.dark *){--tw-bg-opacity:1;background-color:rgb(2 6 23 / var(--tw-bg-opacity, 1))}.dark\:bg-slate-950\/70:is(.dark *){background-color:rgb(2 6 23 / 0.7)}.dark\:bg-slate-950\/80:is(.dark *){background-color:rgb(2 6 23 / 0.8)}.dark\:bg-slate-950\/85:is(.dark *){background-color:rgb(2 6 23 / 0.85)}.dark\:bg-slate-950\/90:is(.dark *){background-color:rgb(2 6 23 / 0.9)}.dark\:bg-slate-900\/85:is(.dark *){background-color:rgb(15 23 42 / 0.85)}.dark\:from-indigo-950\/40:is(.dark *){--tw-gradient-from:rgb(30 27 75 / 0.4) var(--tw-gradient-from-position);--tw-gradient-to:rgb(30 27 75 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.dark\:via-slate-900:is(.dark *){--tw-gradient-to:rgb(15 23 42 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #0f172a var(--tw-gradient-via-position), var(--tw-gradient-to)}.dark\:to-slate-900:is(.dark *){--tw-gradient-to:#0f172a var(--tw-gradient-to-position)}.dark\:text-amber-300:is(.dark *){--tw-text-opacity:1;color:rgb(252 211 77 / var(--tw-text-opacity, 1))}.dark\:text-amber-400:is(.dark *){--tw-text-opacity:1;color:rgb(251 191 36 / var(--tw-text-opacity, 1))}.dark\:text-emerald-300:is(.dark *){--tw-text-opacity:1;color:rgb(110 231 183 / var(--tw-text-opacity, 1))}.dark\:text-emerald-400:is(.dark *){--tw-text-opacity:1;color:rgb(52 211 153 / var(--tw-text-opacity, 1))}.dark\:text-indigo-300:is(.dark *){--tw-text-opacity:1;color:rgb(165 180 252 / var(--tw-text-opacity, 1))}.dark\:text-indigo-400:is(.dark *){--tw-text-opacity:1;color:rgb(129 140 248 / var(--tw-text-opacity, 1))}.dark\:text-sky-400:is(.dark *){--tw-text-opacity:1;color:rgb(56 189 248 / var(--tw-text-opacity, 1))}.dark\:text-slate-100:is(.dark *){--tw-text-opacity:1;color:rgb(241 245 249 / var(--tw-text-opacity, 1))}.dark\:text-slate-200:is(.dark *){--tw-text-opacity:1;color:rgb(226 232 240 / var(--tw-text-opacity, 1))}.dark\:text-slate-300:is(.dark *){--tw-text-opacity:1;color:rgb(203 213 225 / var(--tw-text-opacity, 1))}.dark\:text-slate-400:is(.dark *){--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.dark\:text-teal-400:is(.dark *){--tw-text-opacity:1;color:rgb(45 212 191 / var(--tw-text-opacity, 1))}.dark\:text-white:is(.dark *){--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.dark\:hover\:bg-slate-700:hover:is(.dark *){--tw-bg-opacity:1;background-color:rgb(51 65 85 / var(--tw-bg-opacity, 1))}.dark\:hover\:bg-slate-800:hover:is(.dark *){--tw-bg-opacity:1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.dark\:hover\:bg-slate-800\/70:hover:is(.dark *){background-color:rgb(30 41 59 / 0.7)}.dark\:hover\:text-indigo-400:hover:is(.dark *){--tw-text-opacity:1;color:rgb(129 140 248 / var(--tw-text-opacity, 1))}.dark\:hover\:text-white:hover:is(.dark *){--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}@media (min-width: 640px){.sm\:inline-flex{display:inline-flex}.sm\:w-64{width:16rem}.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:flex-row{flex-direction:row}.sm\:items-end{align-items:flex-end}.sm\:items-center{align-items:center}.sm\:p-10{padding:2.5rem}.sm\:p-6{padding:1.5rem}.sm\:p-8{padding:2rem}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:py-12{padding-top:3rem;padding-bottom:3rem}.sm\:text-2xl{font-size:1.5rem;line-height:2rem}.sm\:text-3xl{font-size:1.875rem;line-height:2.25rem}.sm\:text-5xl{font-size:3rem;line-height:1}.sm\:text-base{font-size:1rem;line-height:1.5rem}.sm\:text-lg{font-size:1.125rem;line-height:1.75rem}.sm\:text-sm{font-size:0.875rem;line-height:1.25rem}.sm\:text-xl{font-size:1.25rem;line-height:1.75rem}}@media (min-width: 768px){.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}.md\:items-end{align-items:flex-end}}@media (min-width: 1024px){.lg\:col-span-4{grid-column:span 4 / span 4}.lg\:col-span-5{grid-column:span 5 / span 5}.lg\:col-span-7{grid-column:span 7 / span 7}.lg\:col-span-8{grid-column:span 8 / span 8}.lg\:flex{display:flex}.lg\:hidden{display:none}.lg\:w-80{width:20rem}.lg\:grid-cols-12{grid-template-columns:repeat(12, minmax(0, 1fr))}.lg\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.lg\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.lg\:flex-row{flex-direction:row}.lg\:items-start{align-items:flex-start}.lg\:items-center{align-items:center}.lg\:justify-between{justify-content:space-between}.lg\:px-8{padding-left:2rem;padding-right:2rem}}</style></head>
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 min-h-screen transition-colors duration-200 selection:bg-indigo-500 selection:text-white grid-bg">
+
+  <!-- Toast Notification -->
+  <div id="toastContainer" class="fixed bottom-5 right-5 z-50 pointer-events-none flex flex-col gap-2"></div>
+
+  <!-- Top Sticky Navigation -->
+  <header class="sticky top-0 z-40 border-b border-slate-200/80 dark:border-slate-800/80 bg-white/85 dark:bg-slate-950/85 glass-panel">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-3">
+      <!-- Brand / Identity -->
+      <a href="file:///c%3A/UCSC/Portfolio/pamali.html#overview" class="flex items-center gap-3 group focus:outline-none">
+        <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-indigo-600 via-indigo-500 to-teal-500 flex items-center justify-center text-white font-bold text-sm shadow-md shadow-indigo-500/20 group-hover:scale-105 transition-transform">
+          PW
+        </div>
+        <div>
+          <span class="font-bold tracking-tight text-slate-900 dark:text-white text-sm sm:text-base block leading-none">Pamali Weerasinghe</span>
+          <span class="font-code text-[11px] text-slate-500 dark:text-slate-400 block mt-0.5">AI Security · Distributed Systems · SE</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden lg:flex items-center gap-1 text-sm font-medium text-slate-600 dark:text-slate-300" aria-label="Main Navigation">
+        <a href="file:///c%3A/UCSC/Portfolio/pamali.html#overview" class="px-3 py-1.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800/70 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Overview</a>
+        <a href="file:///c%3A/UCSC/Portfolio/pamali.html#publications" class="px-3 py-1.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800/70 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Publications</a>
+        <a href="file:///c%3A/UCSC/Portfolio/pamali.html#research" class="px-3 py-1.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800/70 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Research</a>
+        <a href="file:///c%3A/UCSC/Portfolio/pamali.html#projects" class="px-3 py-1.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800/70 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Projects</a>
+        <a href="file:///c%3A/UCSC/Portfolio/pamali.html#skills" class="px-3 py-1.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800/70 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Skills</a>
+        <a href="file:///c%3A/UCSC/Portfolio/pamali.html#education" class="px-3 py-1.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800/70 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Education</a>
+        <a href="file:///c%3A/UCSC/Portfolio/pamali.html#contact" class="px-3 py-1.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800/70 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Contact</a>
+      </nav>
+
+      <!-- Action Controls -->
+      <div class="flex items-center gap-2">
+        <button id="openAuditModalBtn" type="button" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold transition-colors" title="View CV Polish &amp; Readiness Audit">
+          <!-- <span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
+          <span>CV Audit (3)</span> -->
+        </button>
+
+        <button id="openBibtexModalBtn" type="button" class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-indigo-500/10 text-indigo-700 dark:text-indigo-300 border border-indigo-500/30 hover:bg-indigo-500/20 transition-colors">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+          <span>Cite Papers</span>
+        </button>
+
+        <button id="themeToggleBtn" type="button" class="p-2 rounded-lg border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" aria-label="Toggle color theme">
+          <svg id="themeIconSun" class="w-4 h-4 hidden dark:block text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+          <svg id="themeIconMoon" class="w-4 h-4 block dark:hidden text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+        </button>
+
+        <button id="mobileMenuBtn" type="button" class="lg:hidden p-2 rounded-lg border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800" aria-label="Open navigation menu">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileMenuDrawer" class="hidden lg:hidden border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 px-4 pt-2 pb-4 space-y-1">
+      <a href="file:///c%3A/UCSC/Portfolio/pamali.html#overview" class="mobile-nav-link block px-3 py-2 rounded-lg text-sm font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Overview</a>
+      <a href="file:///c%3A/UCSC/Portfolio/pamali.html#publications" class="mobile-nav-link block px-3 py-2 rounded-lg text-sm font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Publications</a>
+      <a href="file:///c%3A/UCSC/Portfolio/pamali.html#research" class="mobile-nav-link block px-3 py-2 rounded-lg text-sm font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Research Experience</a>
+      <a href="file:///c%3A/UCSC/Portfolio/pamali.html#projects" class="mobile-nav-link block px-3 py-2 rounded-lg text-sm font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Systems &amp; Engineering Projects</a>
+      <a href="file:///c%3A/UCSC/Portfolio/pamali.html#skills" class="mobile-nav-link block px-3 py-2 rounded-lg text-sm font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Technical Skills</a>
+      <a href="file:///c%3A/UCSC/Portfolio/pamali.html#education" class="mobile-nav-link block px-3 py-2 rounded-lg text-sm font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Education &amp; Referees</a>
+      <a href="file:///c%3A/UCSC/Portfolio/pamali.html#contact" class="mobile-nav-link block px-3 py-2 rounded-lg text-sm font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Contact</a>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 space-y-16">
+
+    <!-- HERO / OVERVIEW SECTION -->
+    <section id="overview" class="scroll-mt-20">
+      <div class="relative rounded-3xl border border-slate-200 dark:border-slate-800/90 bg-white/90 dark:bg-slate-900/80 p-6 sm:p-10 shadow-xl shadow-slate-900/5 overflow-hidden">
+        <!-- Ambient Gradient Glow -->
+        <div class="pointer-events-none absolute -top-24 -right-24 w-96 h-96 rounded-full bg-indigo-500/10 blur-3xl"></div>
+        <div class="pointer-events-none absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-teal-500/10 blur-3xl"></div>
+
+        <div class="relative z-10 flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8">
+          <div class="space-y-5 max-w-3xl">
+            <!-- Status Pill -->
+            <div class="inline-flex flex-wrap items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-700 dark:text-indigo-300 text-xs font-medium">
+              <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+              <span>B.Sc. (Hons) Software Engineering · UCSC (Expected 2027)</span>
+              <span class="text-slate-400">·</span>
+              <span>Colombo, Sri Lanka</span>
+            </div>
+
+            <!-- Main Headline -->
+            <div class="space-y-2">
+              <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white">
+                Pamali Weerasinghe
+              </h1>
+              <p class="font-editorial text-xl sm:text-2xl text-indigo-600 dark:text-indigo-400 font-medium">
+                Adversarial ML Security, Fault-Tolerant Distributed Middleware &amp; Empirical Software Engineering
+              </p>
+            </div>
+
+            <!-- Dynamic Lens Narrative Box -->
+            <div class="p-4 rounded-2xl bg-slate-100/80 dark:bg-slate-950/70 border border-slate-200/80 dark:border-slate-800/80 space-y-2">
+              <div class="flex flex-wrap items-center justify-between gap-2">
+                <span class="text-xs font-code uppercase tracking-wider text-slate-500 dark:text-slate-400">Interactive Portfolio Lens:</span>
+                <div class="flex flex-wrap gap-1.5" role="group" aria-label="Portfolio Focus Lens">
+                  <button type="button" data-lens="all" class="lens-btn px-2.5 py-1 rounded-md text-xs font-semibold bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:border-indigo-400 transition-all">All Domains</button>
+                  <button type="button" data-lens="ai-security" class="lens-btn px-2.5 py-1 rounded-md text-xs font-semibold bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:border-indigo-400 transition-all">AI Security &amp; Agents</button>
+                  <button type="button" data-lens="distributed-systems" class="lens-btn px-2.5 py-1 rounded-md text-xs font-semibold bg-indigo-600 text-white shadow-sm transition-all">Distributed Middleware</button>
+                  <button type="button" data-lens="empirical-se" class="lens-btn px-2.5 py-1 rounded-md text-xs font-semibold bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:border-indigo-400 transition-all">Empirical SE &amp; LLMs</button>
+                </div>
+              </div>
+              <p id="lensSummaryText" class="text-sm sm:text-base text-slate-700 dark:text-slate-300 leading-relaxed pt-1"><strong>Distributed Systems &amp; Middleware Focus:</strong> Architecting fault-tolerant microservices platforms (<em>SwiftLogistics</em>) that bridge heterogeneous enterprise protocols—legacy <strong>SOAP/XML (CMS)</strong>, proprietary <strong>TCP/IP (WMS)</strong>, and cloud <strong>REST/JSON (ROS)</strong>—behind a <strong>Spring Cloud Gateway</strong> with asynchronous <strong>RabbitMQ (AMQP)</strong> sequential chaining and manual acknowledgments.</p>
+            </div>
+
+            <!-- External Profile Links & Quick Copy -->
+            <div class="flex flex-wrap items-center gap-2.5 pt-1">
+              <a href="https://scholar.google.com/citations?user=scexsrcAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-xs sm:text-sm font-semibold shadow-md shadow-indigo-600/20 transition-all">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5z"></path></svg>
+                <span>Google Scholar</span>
+              </a>
+              <a href="https://github.com/PamaliWeerasinghe" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-slate-900 dark:bg-slate-800 hover:bg-slate-800 dark:hover:bg-slate-700 text-white text-xs sm:text-sm font-semibold border border-slate-700 transition-all">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path></svg>
+                <span>GitHub</span>
+              </a>
+              <a href="https://www.linkedin.com/in/pamali-weerasinghe/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-800 dark:text-slate-200 text-xs sm:text-sm font-semibold border border-slate-200 dark:border-slate-700 transition-all">
+                <svg class="w-4 h-4 text-sky-600 dark:text-sky-400" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"></path></svg>
+                <span>LinkedIn</span>
+              </a>
+              <button id="copyEmailHeroBtn" type="button" class="inline-flex items-center gap-2 px-3.5 py-2.5 rounded-xl bg-slate-100 dark:bg-slate-800/70 hover:bg-slate-200 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 text-xs sm:text-sm font-mono border border-slate-200 dark:border-slate-700 transition-all">
+                <svg class="w-4 h-4 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                <span>pamaliweerasinghe@gmail.com</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Key Metric Callout Grid -->
+          <div class="grid grid-cols-2 sm:grid-cols-2 gap-3 lg:w-80 shrink-0">
+            <div class="p-4 rounded-2xl bg-slate-50 dark:bg-slate-950/90 border border-slate-200/80 dark:border-slate-800">
+              <div class="text-xs font-code uppercase text-slate-500 dark:text-slate-400">Academic GPA</div>
+              <div class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white mt-1">3.55<span class="text-sm font-normal text-slate-400"> / 4.0</span></div>
+              <div class="text-[11px] text-emerald-600 dark:text-emerald-400 font-medium mt-1">Year 2 Director's List (3.86)</div>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-slate-50 dark:bg-slate-950/90 border border-slate-200/80 dark:border-slate-800">
+              <div class="text-xs font-code uppercase text-slate-500 dark:text-slate-400">Publications</div>
+              <div class="text-2xl sm:text-3xl font-extrabold text-indigo-600 dark:text-indigo-400 mt-1">3<span class="text-sm font-normal text-slate-400"> Works</span></div>
+              <div class="text-[11px] text-slate-500 dark:text-slate-400 mt-1">ENASE '26 · Springer CCIS · Survey</div>
+            </div>
+
+            <!-- <div class="p-4 rounded-2xl bg-slate-50 dark:bg-slate-950/90 border border-slate-200/80 dark:border-slate-800">
+              <div class="text-xs font-code uppercase text-slate-500 dark:text-slate-400">Empirical Sample</div>
+              <div class="text-2xl sm:text-3xl font-extrabold text-teal-600 dark:text-teal-400 mt-1">N = 157</div>
+              <div class="text-[11px] text-slate-500 dark:text-slate-400 mt-1">Survey + n=20 Quasi-Experiment</div>
+            </div> -->
+
+            <div class="p-4 rounded-2xl bg-slate-50 dark:bg-slate-950/90 border border-slate-200/80 dark:border-slate-800">
+              <div class="text-xs font-code uppercase text-slate-500 dark:text-slate-400">Core Systems</div>
+              <div class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white mt-1">4<span class="text-sm font-normal text-slate-400"> Repos</span></div>
+              <div class="text-[11px] text-slate-500 dark:text-slate-400 mt-1">RAG · LangGraph · AMQP · Vision</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Core Research Domains Bar -->
+        <div class="mt-8 pt-6 border-t border-slate-200/80 dark:border-slate-800/80 grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="p-4 rounded-2xl bg-indigo-500/5 border border-indigo-500/15">
+            <div class="flex items-center gap-2 text-indigo-600 dark:text-indigo-400 font-semibold text-sm">
+              <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+              <span>Artificial Intelligence &amp; Security</span>
+            </div>
+            <p class="text-xs text-slate-600 dark:text-slate-400 mt-1.5 leading-relaxed">
+              Adversarial Machine Learning, Computer Vision Security, Multi-Agent Systems (LangGraph &amp; MCP), Multimodal RAG, and Runtime Model Defenses.
+            </p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-teal-500/5 border border-teal-500/15">
+            <div class="flex items-center gap-2 text-teal-600 dark:text-teal-400 font-semibold text-sm">
+              <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+              <span>Distributed Systems &amp; Middleware</span>
+            </div>
+            <p class="text-xs text-slate-600 dark:text-slate-400 mt-1.5 leading-relaxed">
+              Fault-Tolerant Middleware, Microservices &amp; Spring Cloud Gateways, Asynchronous Message-Driven Architectures (RabbitMQ/AMQP), and Heterogeneous Protocol Integration (SOAP/XML, TCP/IP, REST).
+            </p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-amber-500/5 border border-amber-500/15">
+            <div class="flex items-center gap-2 text-amber-600 dark:text-amber-400 font-semibold text-sm">
+              <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+              <span>Empirical Software Engineering</span>
+            </div>
+            <p class="text-xs text-slate-600 dark:text-slate-400 mt-1.5 leading-relaxed">
+              Mixed-Method Empirical Studies, Human-AI Developer Workflows, Behavioral Event-Log State Transition Modeling.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH PUBLICATIONS & EMPIRICAL VISUALIZER SECTION -->
+    <section id="publications" class="scroll-mt-20 space-y-6">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+        <div>
+          <!-- <span class="font-code text-xs uppercase tracking-widest text-indigo-600 dark:text-indigo-400 font-semibold">Peer-Reviewed &amp; Invited Scholarship</span> -->
+          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white mt-1">Research Publications &amp; Manuscripts</h2>
+        </div>
+        <!-- Publication Status Filter -->
+        <div class="flex flex-wrap gap-1.5" role="group" aria-label="Filter publications">
+          <button type="button" data-pub-filter="all" class="pub-filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800 hover:border-indigo-400 transition-all">All (3)</button>
+          <button type="button" data-pub-filter="published" class="pub-filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800 hover:border-indigo-400 transition-all">Conference Proceedings</button>
+          <button type="button" data-pub-filter="invited" class="pub-filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800 hover:border-indigo-400 transition-all">Springer CCIS (Invited)</button>
+          <button type="button" data-pub-filter="survey" class="pub-filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-indigo-600 text-white transition-all">Literature Survey</button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+        <!-- Publications List (7 cols) -->
+        <div id="publicationsList" class="lg:col-span-7 space-y-4">
+          <article class="rounded-2xl border border-slate-200/50 dark:border-slate-800/50 opacity-75 bg-white dark:bg-slate-900/85 p-5 sm:p-6 shadow-sm transition-all space-y-3">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <span class="px-2.5 py-0.5 rounded-md text-xs font-code font-semibold bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 border border-indigo-500/20">Literature Survey · Equal Contribution Co-Author</span>
+              <span class="px-2.5 py-0.5 rounded-md text-[11px] font-semibold bg-emerald-500/10 text-emerald-700 dark:text-emerald-300 border border-emerald-500/20">Target: Elsevier Image and Vision Computing (Dec 2026)</span>
+            </div>
+            <h3 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white leading-snug">Seeing Through the Patch: A Survey on Adversarial Patch Attack Detection and Restoration</h3>
+            <p class="text-xs sm:text-sm text-slate-700 dark:text-slate-300"><strong>Pamali D. Weerasinghe</strong> (Equal Contribution) et al. — Supervised by Prof. Kasun De Zoysa (UCSC) &amp; Mr. Yasas Mahima (UNSW)</p>
+            <p class="text-xs italic text-slate-500 dark:text-slate-400">Comprehensive literature survey scheduled for submission to Elsevier’s Image and Vision Computing, December 2026.</p>
+            <ul class="space-y-1.5 pt-1">
+          <li class="flex items-start gap-2 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 mt-2 shrink-0"></span>
+            <span>Synthesizes physical adversarial patch localization, pre-inference, in-inference and post-inference defenses and  image restoration mechanisms and their limitations across safety-critical object detection pipelines.</span>
+          </li>
+        </ul>
+            
+          </article>
+        </div>
+
+        <!-- Empirical Findings Interactive Visualizer (5 cols) -->
+        <div class="lg:col-span-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/90 p-5 sm:p-6 shadow-sm space-y-4">
+          <div class="flex items-start justify-between gap-2">
+            <div>
+              <span class="inline-flex items-center gap-1.5 text-[11px] font-code uppercase tracking-wider text-teal-600 dark:text-teal-400 font-semibold">
+                <span class="w-2 h-2 rounded-full bg-teal-500"></span>
+                ENASE 2026 Empirical Benchmark
+              </span>
+              <h3 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white mt-0.5">
+                LLM Workflow &amp; Verification Rigor
+              </h3>
+            </div>
+            <div class="flex rounded-lg border border-slate-200 dark:border-slate-800 p-0.5 bg-slate-100 dark:bg-slate-950">
+              <button type="button" data-chart-mode="verification" class="chart-mode-btn px-2.5 py-1 rounded-md text-xs font-semibold bg-indigo-600 text-white transition-all">Verification (%)</button>
+              <button type="button" data-chart-mode="study-design" class="chart-mode-btn px-2.5 py-1 rounded-md text-xs font-semibold text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all">Study Cohort</button>
+            </div>
+          </div>
+
+          <p id="chartSubtitle" class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">Comparison of line-by-line code verification rates between novice (1st-Year) and senior (4th-Year) undergraduate cohorts across implementation, constraint-driven algorithmic, and middleware architecture tasks (<a href="https://doi.org/10.5220/0014983500004015" target="_blank" rel="noopener noreferrer" class="text-indigo-500 underline hover:text-indigo-400">DOI: 10.5220/0014983500004015</a>).</p>
+
+          <!-- Chart Container with explicit fixed height per rule -->
+          <div class="relative h-64 w-full">
+            <canvas id="empiricalChart" width="553" height="320" style="display: block; box-sizing: border-box; height: 256px; width: 443px;"></canvas>
+          </div>
+
+          <div class="grid grid-cols-3 gap-2 pt-2 border-t border-slate-200/70 dark:border-slate-800">
+            <div class="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200/60 dark:border-slate-800/80 text-center">
+              <div class="text-xs font-code text-slate-500">Survey Cohort</div>
+              <div class="text-sm font-bold text-slate-900 dark:text-white mt-0.5">N = 157</div>
+            </div>
+            <div class="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200/60 dark:border-slate-800/80 text-center">
+              <div class="text-xs font-code text-slate-500">Quasi-Exp.</div>
+              <div class="text-sm font-bold text-slate-900 dark:text-white mt-0.5">n = 20</div>
+            </div>
+            <div class="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200/60 dark:border-slate-800/80 text-center">
+              <div class="text-xs font-code text-slate-500">CCIS Extension</div>
+              <div class="text-sm font-bold text-indigo-600 dark:text-indigo-400 mt-0.5">+30% Analyses</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH EXPERIENCE & INTERACTIVE PIPELINE SECTION -->
+    <section id="research" class="scroll-mt-20 space-y-6">
+      <div>
+        <span class="font-code text-xs uppercase tracking-widest text-indigo-600 dark:text-indigo-400 font-semibold">Academic &amp; Lab Appointments</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white mt-1">Research Experience &amp; Runtime Defense Architecture</h2>
+      </div>
+
+      <!-- Interactive Final Year Research Pipeline Explorer -->
+      <div class="rounded-2xl border border-indigo-500/30 bg-gradient-to-br from-indigo-950/20 via-white to-teal-950/10 dark:from-indigo-950/40 dark:via-slate-900 dark:to-slate-900 p-6 sm:p-8 shadow-sm space-y-6">
+        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 border-b border-slate-200 dark:border-slate-800 pb-5">
+          <div class="space-y-1">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-indigo-500/15 text-indigo-600 dark:text-indigo-300 border border-indigo-500/30">Final Year Research · June 2026 – Present</span>
+              <span class="text-xs font-code text-slate-500 dark:text-slate-400">University of Colombo School of Computing (UCSC)</span>
+            </div>
+            <h3 class="text-lg sm:text-xl font-bold text-slate-900 dark:text-white">
+              A Model-Agnostic Runtime Security Middleware for Adversarial Patch Detection and Recovery in Object Detection Pipelines
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400">
+              Supervised by <strong>Prof. Kasun De Zoysa (UCSC)</strong> and <strong>Mr. Yasas Mahima (UNSW)</strong>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Research Timeline Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Card 1: Final Year Research -->
+        <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/80 p-6 space-y-4">
+          <div class="flex items-start justify-between gap-2">
+            <div>
+              <span class="text-xs font-code text-indigo-600 dark:text-indigo-400 font-semibold">June 2026 – Present</span>
+              <h3 class="text-lg font-bold text-slate-900 dark:text-white mt-0.5">Final Year Research</h3>
+              <p class="text-xs text-slate-500 dark:text-slate-400">University of Colombo School of Computing · Colombo, Sri Lanka</p>
+            </div>
+            <span class="px-2.5 py-1 rounded-md text-xs font-code bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 border border-indigo-500/20">AI Security</span>
+          </div>
+          <ul class="space-y-2.5 text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
+            <li class="flex items-start gap-2.5">
+              <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 mt-2 shrink-0"></span>
+              <span><strong>Thesis Title:</strong> <em>“A Model-Agnostic Runtime Security Middleware for Adversarial Patch Detection and Recovery in Object Detection Pipelines”</em> — Supervised by Prof. Kasun De Zoysa (UCSC) and Mr. Yasas Mahima (UNSW).</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 mt-2 shrink-0"></span>
+              <span>Designing an asynchronous, model-agnostic runtime security middleware that decouples physical adversarial patch detection and image restoration from underlying deep learning object detectors in safety-critical perception pipelines, improving modularity, maintainability, and reusability across model updates without retraining or architectural rework.</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 mt-2 shrink-0"></span>
+              <span>Co-authored (equal contribution) a comprehensive literature survey titled <em>“Seeing Through the Patch: A Survey on Adversarial Patch Attack Detection and Restoration”</em> (scheduled for submission to Elsevier’s <em>Image and Vision Computing</em>, Dec 2026).</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Card 2: Software Insights Research Labs Internship -->
+        <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/80 p-6 space-y-4">
+          <div class="flex items-start justify-between gap-2">
+            <div>
+              <span class="text-xs font-code text-teal-600 dark:text-teal-400 font-semibold">Nov 2025 – April 2026</span>
+              <h3 class="text-lg font-bold text-slate-900 dark:text-white mt-0.5">Research Intern</h3>
+              <p class="text-xs text-slate-500 dark:text-slate-400">Software Insights Research Labs / UCSC · Colombo, Sri Lanka</p>
+            </div>
+            <span class="px-2.5 py-1 rounded-md text-xs font-code bg-teal-500/10 text-teal-600 dark:text-teal-400 border border-teal-500/20">Empirical SE</span>
+          </div>
+          <ul class="space-y-2.5 text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
+            <li class="flex items-start gap-2.5">
+              <span class="w-1.5 h-1.5 rounded-full bg-teal-500 mt-2 shrink-0"></span>
+              <span>Conducted security scans on project repositories by evaluating vulnerability standards including <strong>CVE, CVSS, and NIST</strong>.</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="w-1.5 h-1.5 rounded-full bg-teal-500 mt-2 shrink-0"></span>
+              <span>Prepared and conducted the preliminary survey (<em>N = 157</em>) and task-based quasi-experiment (<em>n = 20</em>) for selected first-year and fourth-year cohorts evaluating data structures, middleware architectures, and functional programming, generating granular behavioral event logs.</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="w-1.5 h-1.5 rounded-full bg-teal-500 mt-2 shrink-0"></span>
+              <span>Applied <strong>ethnography</strong> and <strong>state transition diagrams</strong> to model behavioral patterns in extracted developer event logs, paired with <strong>Hierarchical Task Analysis (HTA)</strong> to represent distributed cognition across human-LLM workflows.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SYSTEMS & ENGINEERING PROJECTS SECTION -->
+    <section id="projects" class="scroll-mt-20 space-y-6">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+        <div>
+          <span class="font-code text-xs uppercase tracking-widest text-indigo-600 dark:text-indigo-400 font-semibold">Production Architectures &amp; Open-Source Code</span>
+          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white mt-1">Systems &amp; Engineering Projects</h2>
+        </div>
+
+        <!-- Search and Filter Controls -->
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5">
+          <div class="relative">
+            <input id="projectSearchInput" type="text" placeholder="Search systems, protocols, stack..." class="w-full sm:w-64 pl-9 pr-3 py-2 rounded-xl text-xs sm:text-sm bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-slate-100 focus:outline-none focus:border-indigo-500">
+            <svg class="w-4 h-4 text-slate-400 absolute left-3 top-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+          </div>
+          <div class="flex flex-wrap gap-1.5" role="group" aria-label="Filter projects by category">
+            <button type="button" data-proj-tag="all" class="proj-tag-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-indigo-600 text-white transition-all">All (4)</button>
+            <button type="button" data-proj-tag="ai-agents" class="proj-tag-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800 hover:border-indigo-400 transition-all">AI, RAG &amp; MCP</button>
+            <button type="button" data-proj-tag="middleware" class="proj-tag-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800 hover:border-indigo-400 transition-all">Distributed Middleware</button>
+            <button type="button" data-proj-tag="security" class="proj-tag-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800 hover:border-indigo-400 transition-all">Vision Security</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projects Grid -->
+      <div id="projectsGrid" class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <article class="rounded-2xl border border-slate-200 dark:border-slate-800 hover:border-indigo-500/50 bg-white dark:bg-slate-900/85 p-6 shadow-sm flex flex-col justify-between space-y-5 transition-all">
+            <div class="space-y-3">
+              <div class="flex items-start justify-between gap-2">
+                <div>
+                  <span class="text-xs font-code text-indigo-600 dark:text-indigo-400 font-semibold">Heterogeneous Enterprise Protocol Integration &amp; Asynchronous AMQP Orchestration</span>
+                  <h3 class="text-lg font-bold text-slate-900 dark:text-white mt-0.5">SwiftLogistics — Distributed Middleware &amp; Real-Time Tracking Platform</h3>
+                </div>
+                
+              </div>
+              <div class="flex flex-wrap gap-1.5">
+          <span class="px-2.5 py-0.5 rounded-md text-xs font-code bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200/70 dark:border-slate-700">Java</span>
+        
+          <span class="px-2.5 py-0.5 rounded-md text-xs font-code bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200/70 dark:border-slate-700">Spring Boot</span>
+        
+          <span class="px-2.5 py-0.5 rounded-md text-xs font-code bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200/70 dark:border-slate-700">RabbitMQ (AMQP)</span>
+        
+          <span class="px-2.5 py-0.5 rounded-md text-xs font-code bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200/70 dark:border-slate-700">Spring Cloud Gateway</span>
+        
+          <span class="px-2.5 py-0.5 rounded-md text-xs font-code bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200/70 dark:border-slate-700">React</span>
+        
+          <span class="px-2.5 py-0.5 rounded-md text-xs font-code bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200/70 dark:border-slate-700">TypeScript</span>
+        
+          <span class="px-2.5 py-0.5 rounded-md text-xs font-code bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200/70 dark:border-slate-700">SOAP/XML</span>
+        
+          <span class="px-2.5 py-0.5 rounded-md text-xs font-code bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200/70 dark:border-slate-700">TCP/IP</span>
+        
+          <span class="px-2.5 py-0.5 rounded-md text-xs font-code bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200/70 dark:border-slate-700">REST</span>
+        </div>
+              <ul class="space-y-2 pt-1">
+          <li class="flex items-start gap-2 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 mt-2 shrink-0"></span>
+            <span>Architected a fault-tolerant microservices middleware platform bridging heterogeneous protocols—legacy SOAP/XML (CMS), proprietary TCP/IP (WMS), and cloud REST/JSON (ROS)—behind a Spring Cloud Gateway (:8000).</span>
+          </li>
+        
+          <li class="flex items-start gap-2 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 mt-2 shrink-0"></span>
+            <span>Implemented asynchronous order orchestration with RabbitMQ sequential chaining and manual AMQP acknowledgments to prevent message loss during downstream outages, paired with a React/TypeScript Client Portal and Driver App for real-time delivery tracking.</span>
+          </li>
+        </ul>
+            </div>
+
+            <div class="pt-4 border-t border-slate-200/80 dark:border-slate-800 flex flex-wrap items-center justify-between gap-2">
+              <a href="https://github.com/PamaliWeerasinghe/swiftlogistics" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-code font-semibold text-indigo-600 dark:text-indigo-400 hover:underline">
+                <span>github.com/PamaliWeerasinghe/swiftlogistics</span>
+                <span>↗</span>
+              </a>
+              <button type="button" data-project-modal="swiftlogistics" class="open-proj-modal-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 dark:bg-slate-800 hover:bg-indigo-600 hover:text-white text-slate-700 dark:text-slate-200 transition-colors">
+                Inspect Architecture Flow
+              </button>
+            </div>
+          </article>
+        
+          <article class="rounded-2xl border border-slate-200/50 dark:border-slate-800/50 opacity-75 bg-white dark:bg-slate-900/85 p-6 shadow-sm flex flex-col justify-between space-y-5 transition-all">
+            <div class="space-y-3">
+              <div class="flex items-start justify-between gap-2">
+                <div>
+                  <span class="text-xs font-code text-indigo-600 dark:text-indigo-400 font-semibold">Multi-Agent LangGraph Content Pipeline with Model Context Protocol (MCP)</span>
+                  <h3 class="text-lg font-bold text-slate-900 dark:text-white mt-0.5">Agentic AI Social Video Workflow (AI Video Application)</h3>
+                </div>
+                
+              </div>
+              <div class="flex flex-wrap gap-1.5">
+          <span class="px-2.5 py-0.5 rounded-md text-xs font-code bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200/70 dark:border-slate-700">Python</span>
+        
+          <span class="px-2.5 py-0.5 rounded-md text-xs font-code bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200/70 dark:border-slate-700">LangGraph</span>
+        
+          <span class="px-2.5 py-0.5 rounded-md text-xs font-code bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200/70 dark:border-slate-700">Groq API</span>
+        
+          <span class="px-2.5 py-0.5 rounded-md text-xs font-code bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200/70 dark:border-slate-700">FastAPI</span>
+        
+          <span class="px-2.5 py-0.5 rounded-md text-xs font-code bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200/70 dark:border-slate-700">Model Context Protocol (MCP)</span>
+        </div>
+              <ul class="space-y-2 pt-1">
+          <li class="flex items-start gap-2 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 mt-2 shrink-0"></span>
+            <span>Engineered a multi-agent LangGraph workflow orchestrating niche selection, scriptwriting, JSON storyboard generation, and automated video scanning, captioning, and Facebook Page publishing via an MCP server.</span>
+          </li>
+        
+          <li class="flex items-start gap-2 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 mt-2 shrink-0"></span>
+            <span>Integrated Groq-powered LLM inference with a FastAPI event-monitoring dashboard and stateful file pipelines that archive published clips and storyboards to prevent duplicate uploads.</span>
+          </li>
+        </ul>
+            </div>
+
+            <div class="pt-4 border-t border-slate-200/80 dark:border-slate-800 flex flex-wrap items-center justify-between gap-2">
+              <a href="https://github.com/PamaliWeerasinghe/AI-Video-Application" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-code font-semibold text-indigo-600 dark:text-indigo-400 hover:underline">
+                <span>github.com/PamaliWeerasinghe/AI-Video-Application</span>
+                <span>↗</span>
+              </a>
+              <button type="button" data-project-modal="ai-video-app" class="open-proj-modal-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 dark:bg-slate-800 hover:bg-indigo-600 hover:text-white text-slate-700 dark:text-slate-200 transition-colors">
+                Inspect Architecture Flow
+              </button>
+            </div>
+          </article>
+        
+          <article class="rounded-2xl border border-slate-200/50 dark:border-slate-800/50 opacity-75 bg-white dark:bg-slate-900/85 p-6 shadow-sm flex flex-col justify-between space-y-5 transition-all">
+            <div class="space-y-3">
+              <div class="flex items-start justify-between gap-2">
+                <div>
+                  <span class="text-xs font-code text-indigo-600 dark:text-indigo-400 font-semibold">Containerized Vector + Relational Retrieval-Augmented Generation Pipeline</span>
+                  <h3 class="text-lg font-bold text-slate-900 dark:text-white mt-0.5">Multimodal RAG System for Sri Lanka Tourism</h3>
+                </div>
+                
+              </div>
+              <div class="flex flex-wrap gap-1.5">
+          <span class="px-2.5 py-0.5 rounded-md text-xs font-code bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200/70 dark:border-slate-700">Python</span>
+        
+          <span class="px-2.5 py-0.5 rounded-md text-xs font-code bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200/70 dark:border-slate-700">Qdrant</span>
+        
+          <span class="px-2.5 py-0.5 rounded-md text-xs font-code bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200/70 dark:border-slate-700">PostgreSQL</span>
+        
+          <span class="px-2.5 py-0.5 rounded-md text-xs font-code bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200/70 dark:border-slate-700">Groq API</span>
+        
+          <span class="px-2.5 py-0.5 rounded-md text-xs font-code bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200/70 dark:border-slate-700">Streamlit</span>
+        
+          <span class="px-2.5 py-0.5 rounded-md text-xs font-code bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200/70 dark:border-slate-700">Docker Compose</span>
+        </div>
+              <ul class="space-y-2 pt-1">
+          <li class="flex items-start gap-2 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 mt-2 shrink-0"></span>
+            <span>Built a containerized multimodal Retrieval-Augmented Generation (RAG) system for Sri Lanka tourism using Python, Docker Compose, PostgreSQL, and Qdrant to store and index structured attraction metadata, text descriptions, and captioned images.</span>
+          </li>
+        
+          <li class="flex items-start gap-2 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 mt-2 shrink-0"></span>
+            <span>Implemented database initialization, multimodal data ingestion, and Groq-powered retrieval pipelines, served through an interactive Streamlit web application.</span>
+          </li>
+        </ul>
+            </div>
+
+            <div class="pt-4 border-t border-slate-200/80 dark:border-slate-800 flex flex-wrap items-center justify-between gap-2">
+              <a href="https://github.com/sakiththewmika/RAG_App" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-code font-semibold text-indigo-600 dark:text-indigo-400 hover:underline">
+                <span>github.com/PamaliWeerasinghe/RAGApp</span>
+                <span>↗</span>
+              </a>
+              <button type="button" data-project-modal="multimodal-rag" class="open-proj-modal-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 dark:bg-slate-800 hover:bg-indigo-600 hover:text-white text-slate-700 dark:text-slate-200 transition-colors">
+                Inspect Architecture Flow
+              </button>
+            </div>
+          </article>
+        
+          <article class="rounded-2xl border border-slate-200/50 dark:border-slate-800/50 opacity-75 bg-white dark:bg-slate-900/85 p-6 shadow-sm flex flex-col justify-between space-y-5 transition-all">
+            <div class="space-y-3">
+              <div class="flex items-start justify-between gap-2">
+                <div>
+                  <span class="text-xs font-code text-indigo-600 dark:text-indigo-400 font-semibold">Model-Agnostic Adversarial Patch Security Middleware &amp; Web Testbed</span>
+                  <h3 class="text-lg font-bold text-slate-900 dark:text-white mt-0.5">Patch Defense Studio &amp; patch-defense-lib</h3>
+                </div>
+                <span class="shrink-0 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-amber-500/10 text-amber-700 dark:text-amber-300 border border-amber-500/30">Ongoing</span>
+              </div>
+              <div class="flex flex-wrap gap-1.5">
+          <span class="px-2.5 py-0.5 rounded-md text-xs font-code bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200/70 dark:border-slate-700">Python</span>
+        
+          <span class="px-2.5 py-0.5 rounded-md text-xs font-code bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200/70 dark:border-slate-700">PyTorch</span>
+        
+          <span class="px-2.5 py-0.5 rounded-md text-xs font-code bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200/70 dark:border-slate-700">YOLOv5/v8/11</span>
+        
+          <span class="px-2.5 py-0.5 rounded-md text-xs font-code bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200/70 dark:border-slate-700">OpenCV Telea</span>
+        
+          <span class="px-2.5 py-0.5 rounded-md text-xs font-code bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200/70 dark:border-slate-700">FastAPI</span>
+        
+          <span class="px-2.5 py-0.5 rounded-md text-xs font-code bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200/70 dark:border-slate-700">React</span>
+        
+          <span class="px-2.5 py-0.5 rounded-md text-xs font-code bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200/70 dark:border-slate-700">TypeScript</span>
+        
+          <span class="px-2.5 py-0.5 rounded-md text-xs font-code bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200/70 dark:border-slate-700">Docker</span>
+        </div>
+              <ul class="space-y-2 pt-1">
+          <li class="flex items-start gap-2 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 mt-2 shrink-0"></span>
+            <span>Two-repository research architecture combining patch-defense-lib (standalone, model-agnostic Python security middleware) and Patch Defense Studio (React + TypeScript + FastAPI interactive evaluation workbench).</span>
+          </li>
+        
+          <li class="flex items-start gap-2 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 mt-2 shrink-0"></span>
+            <span>Renders interactive HTML5 Canvas bounding-box comparisons, Z-score feature-energy heatmaps, and real-time latency vs. confidence recovery telemetry across YOLOv5su, YOLOv8s, and YOLO11n.</span>
+          </li>
+        </ul>
+            </div>
+
+            
+          </article>
+        </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS MATRIX SECTION -->
+    <section id="skills" class="scroll-mt-20 space-y-6">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+        <div>
+          <span class="font-code text-xs uppercase tracking-widest text-indigo-600 dark:text-indigo-400 font-semibold">Core Competencies &amp; Stack</span>
+          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white mt-1">Technical Skills Explorer</h2>
+        </div>
+        <div class="flex flex-wrap gap-1.5" role="group" aria-label="Skill category tabs">
+          <button type="button" data-skill-cat="all" class="skill-cat-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-indigo-600 text-white transition-all">All Categories</button>
+          <button type="button" data-skill-cat="languages" class="skill-cat-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800 hover:border-indigo-400 transition-all">Languages</button>
+          <button type="button" data-skill-cat="ai" class="skill-cat-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800 hover:border-indigo-400 transition-all">AI, Agents &amp; RAG</button>
+          <button type="button" data-skill-cat="middleware" class="skill-cat-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800 hover:border-indigo-400 transition-all">Middleware &amp; Web</button>
+          <button type="button" data-skill-cat="infra" class="skill-cat-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800 hover:border-indigo-400 transition-all">Databases &amp; DevOps</button>
+        </div>
+      </div>
+
+      <div id="skillsContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/85 p-5 space-y-4">
+          <div class="font-bold text-sm text-slate-900 dark:text-white border-b border-slate-200 dark:border-slate-800 pb-2.5">
+            Programming Languages
+          </div>
+          <div class="space-y-3">
+            
+              <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-950/80 border border-slate-200/70 dark:border-slate-800/80">
+                <div class="font-code text-xs font-bold text-indigo-600 dark:text-indigo-400">Python</div>
+                <div class="text-[11px] text-slate-600 dark:text-slate-400 mt-0.5 leading-snug">Adversarial ML, LangGraph, Multimodal RAG, FastAPI</div>
+              </div>
+            
+              <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-950/80 border border-slate-200/70 dark:border-slate-800/80">
+                <div class="font-code text-xs font-bold text-indigo-600 dark:text-indigo-400">Java</div>
+                <div class="text-[11px] text-slate-600 dark:text-slate-400 mt-0.5 leading-snug">Spring Boot Microservices, Spring Cloud Gateway, AMQP</div>
+              </div>
+            
+              <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-950/80 border border-slate-200/70 dark:border-slate-800/80">
+                <div class="font-code text-xs font-bold text-indigo-600 dark:text-indigo-400">TypeScript</div>
+                <div class="text-[11px] text-slate-600 dark:text-slate-400 mt-0.5 leading-snug">React Client Portal, Driver App, Patch Defense Studio</div>
+              </div>
+            
+              <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-950/80 border border-slate-200/70 dark:border-slate-800/80">
+                <div class="font-code text-xs font-bold text-indigo-600 dark:text-indigo-400">SQL</div>
+                <div class="text-[11px] text-slate-600 dark:text-slate-400 mt-0.5 leading-snug">PostgreSQL Relational Modeling &amp; Spatial/Tourism Queries</div>
+              </div>
+            
+          </div>
+        </div>
+      
+        <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/85 p-5 space-y-4">
+          <div class="font-bold text-sm text-slate-900 dark:text-white border-b border-slate-200 dark:border-slate-800 pb-2.5">
+            AI, Agents &amp; RAG
+          </div>
+          <div class="space-y-3">
+            
+              <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-950/80 border border-slate-200/70 dark:border-slate-800/80">
+                <div class="font-code text-xs font-bold text-indigo-600 dark:text-indigo-400">LangGraph</div>
+                <div class="text-[11px] text-slate-600 dark:text-slate-400 mt-0.5 leading-snug">Stateful Multi-Agent Social Video Orchestration</div>
+              </div>
+            
+              <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-950/80 border border-slate-200/70 dark:border-slate-800/80">
+                <div class="font-code text-xs font-bold text-indigo-600 dark:text-indigo-400">Groq API</div>
+                <div class="text-[11px] text-slate-600 dark:text-slate-400 mt-0.5 leading-snug">Low-Latency LLM Inference for RAG &amp; Agent Pipelines</div>
+              </div>
+            
+              <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-950/80 border border-slate-200/70 dark:border-slate-800/80">
+                <div class="font-code text-xs font-bold text-indigo-600 dark:text-indigo-400">Model Context Protocol (MCP)</div>
+                <div class="text-[11px] text-slate-600 dark:text-slate-400 mt-0.5 leading-snug">Automated Agent Tooling &amp; Social Publishing Server</div>
+              </div>
+            
+              <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-950/80 border border-slate-200/70 dark:border-slate-800/80">
+                <div class="font-code text-xs font-bold text-indigo-600 dark:text-indigo-400">Multimodal RAG</div>
+                <div class="text-[11px] text-slate-600 dark:text-slate-400 mt-0.5 leading-snug">Qdrant Vector + Captioned Image &amp; Text Retrieval</div>
+              </div>
+            
+              <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-950/80 border border-slate-200/70 dark:border-slate-800/80">
+                <div class="font-code text-xs font-bold text-indigo-600 dark:text-indigo-400">Streamlit</div>
+                <div class="text-[11px] text-slate-600 dark:text-slate-400 mt-0.5 leading-snug">Interactive Multimodal Retrieval Web Interface</div>
+              </div>
+            
+          </div>
+        </div>
+      
+        <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/85 p-5 space-y-4">
+          <div class="font-bold text-sm text-slate-900 dark:text-white border-b border-slate-200 dark:border-slate-800 pb-2.5">
+            Middleware, Backend &amp; Web
+          </div>
+          <div class="space-y-3">
+            
+              <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-950/80 border border-slate-200/70 dark:border-slate-800/80">
+                <div class="font-code text-xs font-bold text-indigo-600 dark:text-indigo-400">Spring Boot &amp; Spring Cloud Gateway</div>
+                <div class="text-[11px] text-slate-600 dark:text-slate-400 mt-0.5 leading-snug">Microservices &amp; WebFlux API Gateway (:8000)</div>
+              </div>
+            
+              <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-950/80 border border-slate-200/70 dark:border-slate-800/80">
+                <div class="font-code text-xs font-bold text-indigo-600 dark:text-indigo-400">RabbitMQ (AMQP)</div>
+                <div class="text-[11px] text-slate-600 dark:text-slate-400 mt-0.5 leading-snug">Sequential Chaining &amp; Manual ACK Fault Tolerance</div>
+              </div>
+            
+              <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-950/80 border border-slate-200/70 dark:border-slate-800/80">
+                <div class="font-code text-xs font-bold text-indigo-600 dark:text-indigo-400">FastAPI</div>
+                <div class="text-[11px] text-slate-600 dark:text-slate-400 mt-0.5 leading-snug">Event-Monitoring Dashboards &amp; ML Defense APIs</div>
+              </div>
+            
+              <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-950/80 border border-slate-200/70 dark:border-slate-800/80">
+                <div class="font-code text-xs font-bold text-indigo-600 dark:text-indigo-400">React, Vite &amp; Tailwind CSS</div>
+                <div class="text-[11px] text-slate-600 dark:text-slate-400 mt-0.5 leading-snug">Real-Time Logistics &amp; Security Testbed Frontends</div>
+              </div>
+            
+              <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-950/80 border border-slate-200/70 dark:border-slate-800/80">
+                <div class="font-code text-xs font-bold text-indigo-600 dark:text-indigo-400">REST, SOAP/XML &amp; TCP/IP</div>
+                <div class="text-[11px] text-slate-600 dark:text-slate-400 mt-0.5 leading-snug">Heterogeneous Enterprise Protocol Bridging</div>
+              </div>
+            
+          </div>
+        </div>
+      
+        <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/85 p-5 space-y-4">
+          <div class="font-bold text-sm text-slate-900 dark:text-white border-b border-slate-200 dark:border-slate-800 pb-2.5">
+            Databases, Containers &amp; Tools
+          </div>
+          <div class="space-y-3">
+            
+              <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-950/80 border border-slate-200/70 dark:border-slate-800/80">
+                <div class="font-code text-xs font-bold text-indigo-600 dark:text-indigo-400">PostgreSQL &amp; Qdrant</div>
+                <div class="text-[11px] text-slate-600 dark:text-slate-400 mt-0.5 leading-snug">Relational Metadata &amp; High-Dimensional Vector Search</div>
+              </div>
+            
+              <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-950/80 border border-slate-200/70 dark:border-slate-800/80">
+                <div class="font-code text-xs font-bold text-indigo-600 dark:text-indigo-400">Docker &amp; Docker Compose</div>
+                <div class="text-[11px] text-slate-600 dark:text-slate-400 mt-0.5 leading-snug">Multi-Container RAG &amp; Microservice Orchestration</div>
+              </div>
+            
+              <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-950/80 border border-slate-200/70 dark:border-slate-800/80">
+                <div class="font-code text-xs font-bold text-indigo-600 dark:text-indigo-400">Conda</div>
+                <div class="text-[11px] text-slate-600 dark:text-slate-400 mt-0.5 leading-snug">Isolated Deep Learning Environments (yolo_test_bed)</div>
+              </div>
+            
+              <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-950/80 border border-slate-200/70 dark:border-slate-800/80">
+                <div class="font-code text-xs font-bold text-indigo-600 dark:text-indigo-400">Maven &amp; Git</div>
+                <div class="text-[11px] text-slate-600 dark:text-slate-400 mt-0.5 leading-snug">Java Build Lifecycle &amp; GitHub Actions CI/CD</div>
+              </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION, COURSEWORK & REFEREES SECTION -->
+    <section id="education" class="scroll-mt-20 space-y-6">
+      <div>
+        <span class="font-code text-xs uppercase tracking-widest text-indigo-600 dark:text-indigo-400 font-semibold">Academic Foundation &amp; References</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white mt-1">Education &amp; Academic Referees</h2>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <!-- Education & Coursework Card (8 cols) -->
+        <div class="lg:col-span-8 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/80 p-6 sm:p-8 space-y-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 dark:border-slate-800 pb-4">
+            <div>
+              <span class="text-xs font-code uppercase text-indigo-600 dark:text-indigo-400 font-semibold">Expected 2027 · Colombo, Sri Lanka</span>
+              <h3 class="text-xl font-bold text-slate-900 dark:text-white mt-0.5">B.Sc. (Hons) in Software Engineering</h3>
+              <p class="text-sm text-slate-600 dark:text-slate-400">University of Colombo School of Computing (UCSC)</p>
+            </div>
+            <div class="flex flex-col sm:items-end">
+              <span class="px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/10 text-emerald-700 dark:text-emerald-300 border border-emerald-500/20">GPA: 3.55 / 4.00</span>
+              <span class="text-xs text-slate-500 dark:text-slate-400 mt-1">Second Class (Upper Division) Honours</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-3 p-3.5 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-800 dark:text-amber-300 text-xs sm:text-sm">
+            <svg class="w-5 h-5 text-amber-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
+            <span><strong>Director’s List Distinction:</strong> Year 2 Academic Excellence with a <strong>3.86 / 4.00 GPA</strong>.</span>
+          </div>
+
+          <!-- Interactive Coursework Filter -->
+          <div class="space-y-3">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <span class="text-xs font-code uppercase tracking-wider text-slate-500 dark:text-slate-400 font-semibold">Key Undergraduate Coursework (14 Modules)</span>
+              <div class="flex flex-wrap gap-1">
+                <button type="button" data-course-filter="all" class="course-filter-btn px-2.5 py-1 rounded-md text-xs font-semibold bg-indigo-600 text-white">All (14)</button>
+                <button type="button" data-course-filter="ai" class="course-filter-btn px-2.5 py-1 rounded-md text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">AI &amp; Intelligence</button>
+                <button type="button" data-course-filter="systems" class="course-filter-btn px-2.5 py-1 rounded-md text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">Systems &amp; Security</button>
+                <button type="button" data-course-filter="se" class="course-filter-btn px-2.5 py-1 rounded-md text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">Core SE &amp; Theory</button>
+              </div>
+            </div>
+            <div id="courseworkPills" class="flex flex-wrap gap-2">
+        <span class="px-3 py-1.5 rounded-xl text-xs font-medium bg-slate-100 dark:bg-slate-950 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-800">
+          Machine Learning &amp; Neural Computing
+        </span>
+      
+        <span class="px-3 py-1.5 rounded-xl text-xs font-medium bg-slate-100 dark:bg-slate-950 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-800">
+          Natural Language Processing
+        </span>
+      
+        <span class="px-3 py-1.5 rounded-xl text-xs font-medium bg-slate-100 dark:bg-slate-950 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-800">
+          Cognitive Robotics
+        </span>
+      
+        <span class="px-3 py-1.5 rounded-xl text-xs font-medium bg-slate-100 dark:bg-slate-950 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-800">
+          Middleware Architecture
+        </span>
+      
+        <span class="px-3 py-1.5 rounded-xl text-xs font-medium bg-slate-100 dark:bg-slate-950 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-800">
+          Distributed Systems
+        </span>
+      
+        <span class="px-3 py-1.5 rounded-xl text-xs font-medium bg-slate-100 dark:bg-slate-950 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-800">
+          Parallel Computing
+        </span>
+      
+        <span class="px-3 py-1.5 rounded-xl text-xs font-medium bg-slate-100 dark:bg-slate-950 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-800">
+          Information System Security
+        </span>
+      
+        <span class="px-3 py-1.5 rounded-xl text-xs font-medium bg-slate-100 dark:bg-slate-950 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-800">
+          Computer Networks
+        </span>
+      
+        <span class="px-3 py-1.5 rounded-xl text-xs font-medium bg-slate-100 dark:bg-slate-950 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-800">
+          Data Structures &amp; Algorithms
+        </span>
+      
+        <span class="px-3 py-1.5 rounded-xl text-xs font-medium bg-slate-100 dark:bg-slate-950 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-800">
+          Object-Oriented Programming
+        </span>
+      
+        <span class="px-3 py-1.5 rounded-xl text-xs font-medium bg-slate-100 dark:bg-slate-950 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-800">
+          Database Systems
+        </span>
+      
+        <span class="px-3 py-1.5 rounded-xl text-xs font-medium bg-slate-100 dark:bg-slate-950 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-800">
+          Software Engineering
+        </span>
+      
+        <span class="px-3 py-1.5 rounded-xl text-xs font-medium bg-slate-100 dark:bg-slate-950 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-800">
+          Software Quality Assurance
+        </span>
+      
+        <span class="px-3 py-1.5 rounded-xl text-xs font-medium bg-slate-100 dark:bg-slate-950 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-800">
+          Human-Computer Interaction
+        </span>
+      </div>
+          </div>
+        </div>
+
+        <!-- Academic Referees (4 cols) -->
+        <div class="lg:col-span-4 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/80 p-6 sm:p-8 flex flex-col justify-between space-y-6">
+          <div class="space-y-4">
+            <div>
+              <span class="text-xs font-code uppercase text-indigo-600 dark:text-indigo-400 font-semibold">Academic Endorsements</span>
+              <h3 class="text-xl font-bold text-slate-900 dark:text-white mt-0.5">Referees</h3>
+            </div>
+
+            <!-- Referee 1 -->
+            <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-950/80 border border-slate-200/80 dark:border-slate-800 space-y-1.5">
+              <div class="font-bold text-sm text-slate-900 dark:text-white">Prof. Kasun De Zoysa</div>
+              <div class="text-xs text-indigo-600 dark:text-indigo-400 font-medium">Professor · Final Year Research Supervisor</div>
+              <div class="text-xs text-slate-500 dark:text-slate-400">University of Colombo School of Computing</div>
+              <div class="pt-1 flex items-center justify-between text-xs font-mono text-slate-600 dark:text-slate-400">
+                <span>referee1@university.ac.lk</span>
+                <span class="px-1.5 py-0.5 rounded bg-amber-500/15 text-amber-600 dark:text-amber-400 text-[10px]">Update in CV</span>
+              </div>
+            </div>
+
+            <!-- Referee 2 -->
+            <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-950/80 border border-slate-200/80 dark:border-slate-800 space-y-1.5">
+              <div class="font-bold text-sm text-slate-900 dark:text-white">Dr. Roshan N. Rajapakse</div>
+              <div class="text-xs text-teal-600 dark:text-teal-400 font-medium">Senior Lecturer · ENASE &amp; CCIS Co-Author</div>
+              <div class="text-xs text-slate-500 dark:text-slate-400">University of Colombo School of Computing</div>
+              <div class="pt-1 flex items-center justify-between text-xs font-mono text-slate-600 dark:text-slate-400">
+                <a href="mailto:rnr@ucsc.cmb.ac.lk" class="hover:text-indigo-500 underline">rnr@ucsc.cmb.ac.lk</a>
+                <button type="button" data-copy="rnr@ucsc.cmb.ac.lk" class="copy-btn text-indigo-600 dark:text-indigo-400 hover:underline text-[11px] font-sans font-semibold">Copy</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="p-3.5 rounded-xl bg-indigo-500/5 border border-indigo-500/20 text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+            Need a tailored CV check before submitting? Click <strong>CV Audit (3)</strong> in the top bar to see the 3 formatting placeholders spotted in your uploaded PDF.
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT & INQUIRY COMPOSER SECTION -->
+    <section id="contact" class="scroll-mt-20">
+      <div class="rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/90 p-6 sm:p-10 shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-8">
+        <div class="lg:col-span-5 space-y-5">
+          <div>
+            <span class="font-code text-xs uppercase tracking-widest text-indigo-600 dark:text-indigo-400 font-semibold">Get In Touch</span>
+            <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white mt-1">Research &amp; Engineering Inquiries</h2>
+            <p class="text-sm text-slate-600 dark:text-slate-400 mt-2 leading-relaxed">
+              Available for Research Engineer roles, pre-doctoral fellowships, graduate research collaborations in AI Security &amp; Distributed Systems, and software engineering opportunities.
+            </p>
+          </div>
+
+          <div class="space-y-3 text-sm">
+            <div class="flex items-center justify-between p-3.5 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200/80 dark:border-slate-800">
+              <div>
+                <div class="text-xs font-code text-slate-500">Email Address</div>
+                <div class="font-mono font-medium text-slate-900 dark:text-white">pamaliweerasinghe@gmail.com</div>
+              </div>
+              <button type="button" data-copy="pamaliweerasinghe@gmail.com" class="copy-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 hover:bg-indigo-500/20 transition-colors">Copy</button>
+            </div>
+
+            <div class="flex items-center justify-between p-3.5 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200/80 dark:border-slate-800">
+              <div>
+                <div class="text-xs font-code text-slate-500">Phone / WhatsApp</div>
+                <div class="font-mono font-medium text-slate-900 dark:text-white">+94 77 228 2335</div>
+              </div>
+              <button type="button" data-copy="+94 77 228 2335" class="copy-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 hover:bg-indigo-500/20 transition-colors">Copy</button>
+            </div>
+
+            <div class="grid grid-cols-3 gap-2 pt-1">
+              <a href="https://github.com/PamaliWeerasinghe" target="_blank" rel="noopener noreferrer" class="p-3 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200/80 dark:border-slate-800 text-center text-xs font-semibold hover:border-indigo-500 transition-colors">GitHub ↗</a>
+              <a href="https://www.linkedin.com/in/pamali-weerasinghe/" target="_blank" rel="noopener noreferrer" class="p-3 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200/80 dark:border-slate-800 text-center text-xs font-semibold hover:border-indigo-500 transition-colors">LinkedIn ↗</a>
+              <a href="https://scholar.google.com/citations?user=scexsrcAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer" class="p-3 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200/80 dark:border-slate-800 text-center text-xs font-semibold hover:border-indigo-500 transition-colors">Scholar ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Quick Message / Collaboration Composer -->
+        <div class="lg:col-span-7 p-5 sm:p-6 rounded-2xl bg-slate-50 dark:bg-slate-950 border border-slate-200/80 dark:border-slate-800 space-y-4">
+          <div class="flex items-center justify-between">
+            <h3 class="text-base font-bold text-slate-900 dark:text-white">Compose Direct Inquiry</h3>
+            <span class="text-xs font-code text-slate-500">Pre-fills email or copies formatted note</span>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div>
+              <label for="inquiryName" class="block text-xs font-medium text-slate-600 dark:text-slate-400 mb-1">Your Name / Organization</label>
+              <input id="inquiryName" type="text" placeholder="e.g., WSO2 Research / Lab Director" class="w-full px-3.5 py-2 rounded-xl text-sm bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white focus:outline-none focus:border-indigo-500">
+            </div>
+            <div>
+              <label for="inquiryTopic" class="block text-xs font-medium text-slate-600 dark:text-slate-400 mb-1">Inquiry Topic</label>
+              <select id="inquiryTopic" class="w-full px-3.5 py-2 rounded-xl text-sm bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white focus:outline-none focus:border-indigo-500">
+                <option value="Research Engineer / Fellowship Opportunity">Research Engineer / Fellowship Opportunity</option>
+                <option value="Graduate Research Collaboration (AI Security / Middleware)">Graduate Research Collaboration (AI Security / Middleware)</option>
+                <option value="ENASE 2026 / Springer CCIS Paper Inquiry">ENASE 2026 / Springer CCIS Paper Inquiry</option>
+                <option value="Software Engineering &amp; Distributed Systems Role">Software Engineering &amp; Distributed Systems Role</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label for="inquiryBody" class="block text-xs font-medium text-slate-600 dark:text-slate-400 mb-1">Message</label>
+            <textarea id="inquiryBody" rows="3" placeholder="Hi Pamali, I reviewed your research portfolio and ENASE 2026 study..." class="w-full px-3.5 py-2 rounded-xl text-sm bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white focus:outline-none focus:border-indigo-500"></textarea>
+          </div>
+
+          <div class="flex flex-wrap items-center justify-end gap-2.5 pt-1">
+            <button id="copyInquiryBtn" type="button" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 hover:border-indigo-500 transition-colors">
+              Copy Formatted Message
+            </button>
+            <button id="sendMailtoBtn" type="button" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-indigo-600 hover:bg-indigo-500 text-white shadow-md shadow-indigo-600/20 transition-colors">
+              Open in Email Client ↗
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-200 dark:border-slate-800/80 py-8 mt-12 text-center text-xs text-slate-500 dark:text-slate-400">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        <strong>Pamali Devanga Weerasinghe</strong> · B.Sc. (Hons) in Software Engineering, UCSC
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="https://scholar.google.com/citations?user=scexsrcAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-500">Google Scholar</a>
+        <a href="https://github.com/PamaliWeerasinghe" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-500">GitHub</a>
+        <a href="https://www.linkedin.com/in/pamali-weerasinghe/" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-500">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL 1: BIBTEX & CITATIONS -->
+  <div id="bibtexModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-slate-950/70 p-4 glass-panel" role="dialog" aria-modal="true" aria-labelledby="bibtexModalTitle">
+    <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl max-w-2xl w-full p-6 shadow-2xl space-y-4">
+      <div class="flex items-center justify-between border-b border-slate-200 dark:border-slate-800 pb-3">
+        <h3 id="bibtexModalTitle" class="text-lg font-bold text-slate-900 dark:text-white">Cite Research Publications (BibTeX &amp; APA)</h3>
+        <button id="closeBibtexModalBtn" type="button" class="p-1.5 rounded-lg text-slate-400 hover:text-slate-700 dark:hover:text-white">✕</button>
+      </div>
+      <div class="space-y-3 max-h-[70vh] overflow-y-auto pr-1">
+        <div class="space-y-1.5">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-semibold text-indigo-600 dark:text-indigo-400">ENASE 2026 Conference Proceedings (BibTeX)</span>
+            <button type="button" data-copy-target="enaseBibtexCode" class="copy-target-btn text-xs font-semibold text-indigo-600 dark:text-indigo-400 hover:underline">Copy BibTeX</button>
+          </div>
+          <pre id="enaseBibtexCode" class="p-3 rounded-xl bg-slate-100 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-[11px] font-code overflow-x-auto text-slate-800 dark:text-slate-200">@inproceedings{weerasinghe2026mixed,
+  author    = {Pamali D. Weerasinghe and Roshan N. Rajapakse and Isuru Dharmadasa and Chamath Keppitiyagama},
+  title     = {A Mixed-Method Empirical Study of LLM Assistance in Software Engineering Workflows},
+  booktitle = {Proceedings of the 21st International Conference on Evaluation of Novel Approaches to Software Engineering (ENASE 2026)},
+  volume    = {1},
+  pages     = {210--222},
+  year      = {2026},
+  publisher = {SCITEPRESS},
+  doi       = {10.5220/0014983500004015},
+  url       = {https://doi.org/10.5220/0014983500004015}
+}</pre>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 2: CV POLISH & READINESS AUDIT -->
+  <div id="auditModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-slate-950/70 p-4 glass-panel" role="dialog" aria-modal="true" aria-labelledby="auditModalTitle">
+    <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl max-w-2xl w-full p-6 shadow-2xl space-y-4">
+      <div class="flex items-center justify-between border-b border-slate-200 dark:border-slate-800 pb-3">
+        <div class="flex items-center gap-2">
+          <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
+          <h3 id="auditModalTitle" class="text-lg font-bold text-slate-900 dark:text-white">CV Pre-Submission Audit (`Research_CV.pdf`)</h3>
+        </div>
+        <button id="closeAuditModalBtn" type="button" class="p-1.5 rounded-lg text-slate-400 hover:text-slate-700 dark:hover:text-white">✕</button>
+      </div>
+      <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+        While converting your uploaded <code class="font-code text-xs px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800">Research_CV.pdf</code> into this portfolio, we resolved or flagged the following <strong>4 placeholder details</strong> so your CV and portfolio are ready for fellowship and graduate applications:
+      </p>
+      <div class="space-y-3 text-xs sm:text-sm">
+        <div class="p-3.5 rounded-xl bg-amber-500/10 border border-amber-500/20 space-y-1">
+          <div class="font-bold text-amber-800 dark:text-amber-300">1. Page 1 Header: `Portfolio: yourportfolio.dev`</div>
+          <p class="text-slate-600 dark:text-slate-300">Your CV header currently links to <code class="font-code">https://yourportfolio.dev</code>. Once you host this single-file HTML portfolio on GitHub Pages (<code class="font-code">pamaliweerasinghe.github.io</code>) or Vercel, update that link in your LaTeX source.</p>
+        </div>
+        <div class="p-3.5 rounded-xl bg-amber-500/10 border border-amber-500/20 space-y-1">
+          <div class="font-bold text-amber-800 dark:text-amber-300">2. Page 2 Projects: `[Month Year – Month Year]` on Multimodal RAG System</div>
+          <p class="text-slate-600 dark:text-slate-300">The Multimodal RAG System entry on Page 2 still displays the literal placeholder <code class="font-code">[Month Year – Month Year]</code>, and its PDF hyperlink points to collaborator repo <code class="font-code">github.com/sakiththewmika/RAG_App</code> while the visible text says <code class="font-code">github.com/PamaliWeerasinghe/RAGApp</code>.</p>
+        </div>
+        <div class="p-3.5 rounded-xl bg-amber-500/10 border border-amber-500/20 space-y-1">
+          <div class="font-bold text-amber-800 dark:text-amber-300">3. Page 2 Referees: `[Prof. Kasun De Zoysa` &amp; `referee1@university.ac.lk`</div>
+          <p class="text-slate-600 dark:text-slate-300">There is a stray opening square bracket before <code class="font-code">[Prof. Kasun De Zoysa</code> and a placeholder email <code class="font-code">referee1@university.ac.lk</code> (update to his official UCSC email <code class="font-code">kasun@ucsc.cmb.ac.lk</code> before submitting).</p>
+        </div>
+      </div>
+      <div class="flex justify-end pt-2">
+        <button id="ackAuditModalBtn" type="button" class="px-4 py-2 rounded-xl text-xs font-semibold bg-indigo-600 text-white hover:bg-indigo-500 transition-colors">Got It</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 3: PROJECT ARCHITECTURE DEEP DIVE -->
+  <div id="projectModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-slate-950/70 p-4 glass-panel" role="dialog" aria-modal="true" aria-labelledby="projectModalTitle">
+    <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl max-w-2xl w-full p-6 shadow-2xl space-y-4">
+      <div class="flex items-start justify-between border-b border-slate-200 dark:border-slate-800 pb-3">
+        <div>
+          <span id="projectModalSubtitle" class="text-xs font-code text-indigo-600 dark:text-indigo-400 font-semibold"></span>
+          <h3 id="projectModalTitle" class="text-lg sm:text-xl font-bold text-slate-900 dark:text-white mt-0.5"></h3>
+        </div>
+        <button id="closeProjectModalBtn" type="button" class="p-1.5 rounded-lg text-slate-400 hover:text-slate-700 dark:hover:text-white">✕</button>
+      </div>
+      <div id="projectModalBody" class="space-y-4 text-sm text-slate-700 dark:text-slate-300 max-h-[70vh] overflow-y-auto pr-1"></div>
+    </div>
+  </div>
+
+  <script>
+    // =========================================================================
+    // GROUNDED DATA STORE (Strictly verified from Research_CV.pdf & Context)
+    // =========================================================================
+    const PORTFOLIO_DATA = {
+      lenses: {
+        'all': 'Fourth-year Software Engineering undergraduate researcher at the <strong>University of Colombo School of Computing (UCSC)</strong> bridging <strong>Artificial Intelligence</strong> (adversarial machine learning, computer vision security, multi-agent systems, multimodal RAG), <strong>Distributed Systems</strong> (fault-tolerant middleware, microservices, API gateways, asynchronous AMQP architectures), and <strong>Empirical Software Engineering</strong>. First author of an ENASE 2026 peer-reviewed study selected for extended publication in Springer CCIS.',
+        'ai-security': '<strong>AI Security &amp; Agentic Systems Focus:</strong> Designed a model-agnostic runtime security middleware (<em>Patch Defense Studio</em>) that decouples adversarial patch detection and image restoration from object detectors. Another multi-agent <strong>LangGraph + Model Context Protocol (MCP)</strong> workflows and containerized <strong>Qdrant + PostgreSQL Multimodal RAG</strong> pipelines.',
+        'distributed-systems': '<strong>Distributed Systems &amp; Middleware Focus:</strong> Architecting fault-tolerant microservices platforms (<em>SwiftLogistics</em>) that bridge heterogeneous enterprise protocols—legacy <strong>SOAP/XML (CMS)</strong>, proprietary <strong>TCP/IP (WMS)</strong>, and cloud <strong>REST/JSON (ROS)</strong>—behind a <strong>Spring Cloud Gateway</strong> with asynchronous <strong>RabbitMQ (AMQP)</strong> sequential chaining and manual acknowledgments.',
+        'empirical-se': '<strong>Empirical Software Engineering Focus:</strong> First author of <em>"A Mixed-Method Empirical Study of LLM Assistance in Software Engineering Workflows"</em> (<strong>ENASE 2026</strong>, <a href="https://doi.org/10.5220/0014983500004015" target="_blank" rel="noopener noreferrer" class="underline text-indigo-500">DOI: 10.5220/0014983500004015</a>) and co-author of its invited <strong>Springer CCIS</strong> extended manuscript (+30% empirical analyses)'
+      },
+
+      publications: [
+        {
+          id: 'enase-2026',
+          type: 'published',
+          lens: ['all', 'empirical-se'],
+          badge: 'ENASE 2026 · Peer-Reviewed Conference Paper',
+          awardBadge: 'Invited for Springer CCIS Extended Post-Publication',
+          title: 'A Mixed-Method Empirical Study of LLM Assistance in Software Engineering Workflows',
+          authors: '<strong>Pamali D. Weerasinghe</strong>, Roshan N. Rajapakse, Isuru Dharmadasa, and Chamath Keppitiyagama',
+          venue: 'In Proceedings of the 21st International Conference on Evaluation of Novel Approaches to Software Engineering (ENASE 2026), Vol. 1, pp. 210–222, 2026.',
+          highlights: [
+            'Conducted a mixed-method empirical study (N = 157 survey; n = 20 quasi-experiment with behavioral screen-recording analysis) evaluating how LLM assistance reshapes first-year and fourth-year undergraduate workflows, verification rigor and task triage across implementation, constraint-driven algorithmic, and middleware architecture tasks.',
+            'Post-Publication Selection: Recognized as a high-quality paper at ENASE 2026 and invited for extended post-publication in Springer’s Communications in Computer and Information Science (CCIS) book series.'
+          ],
+          links: [
+            { label: 'DOI: 10.5220/0014983500004015', url: 'https://doi.org/10.5220/0014983500004015' },
+            { label: 'SCITEPRESS PDF', url: 'https://www.scitepress.org/Papers/2026/149835/149835.pdf' },
+            { label: 'arXiv: 2609.04214', url: 'https://arxiv.org/abs/2609.04214' }
+          ]
+        },
+        {
+          id: 'springer-ccis-2026',
+          type: 'invited',
+          lens: ['all', 'empirical-se'],
+          badge: 'Springer CCIS · Invited Extended Manuscript',
+          awardBadge: '+30% New Empirical Analyses',
+          title: 'Constructing or Curating? How LLM Assistance Affects Software Engineering Workflows of Novice and Senior Students',
+          authors: 'Roshan N. Rajapakse, Isuru Dharmadasa, <strong>Pamali D. Weerasinghe</strong>, and Chamath Keppitiyagama',
+          venue: 'Invited extended manuscript under review at Communications in Computer and Information Science (CCIS), Springer, 2026.',
+          highlights: [
+            'Extended the ENASE 2026 empirical study with over 30% new empirical analyses.'
+          ],
+          links: [
+            { label: 'Google Scholar Profile', url: 'https://scholar.google.com/citations?user=scexsrcAAAAJ&hl=en' }
+          ]
+        },
+        {
+          id: 'patch-survey-2026',
+          type: 'survey',
+          lens: ['all', 'ai-security'],
+          badge: 'Literature Survey · Equal Contribution Co-Author',
+          awardBadge: 'Target: Elsevier Image and Vision Computing (Dec 2026)',
+          title: 'Seeing Through the Patch: A Survey on Adversarial Patch Attack Detection and Restoration',
+          authors: '<strong>Pamali D. Weerasinghe</strong> (Equal Contribution) et al. — Supervised by Prof. Kasun De Zoysa (UCSC) &amp; Mr. Yasas Mahima (UNSW)',
+          venue: 'Comprehensive literature survey scheduled for submission to Elsevier’s Image and Vision Computing, December 2026.',
+          highlights: [
+            'Synthesizes physical adversarial patch localization, pre-inference, in-inference and post-inference defenses and  image restoration mechanisms and their limitations across safety-critical object detection pipelines.'
+          ]
+        }
+      ],
+
+      projects: [
+        {
+          id: 'swiftlogistics',
+          title: 'SwiftLogistics — Distributed Middleware & Real-Time Tracking Platform',
+          subtitle: 'Heterogeneous Enterprise Protocol Integration & Asynchronous AMQP Orchestration',
+          category: 'middleware',
+          lens: ['all', 'distributed-systems'],
+          repoUrl: 'https://github.com/PamaliWeerasinghe/swiftlogistics',
+          repoLabel: 'github.com/PamaliWeerasinghe/swiftlogistics',
+          stack: ['Java', 'Spring Boot', 'RabbitMQ (AMQP)', 'Spring Cloud Gateway', 'React', 'TypeScript', 'SOAP/XML', 'TCP/IP', 'REST'],
+          bullets: [
+            'Architected a fault-tolerant microservices middleware platform bridging heterogeneous protocols—legacy SOAP/XML (CMS), proprietary TCP/IP (WMS), and cloud REST/JSON (ROS)—behind a Spring Cloud Gateway (:8000).',
+            'Implemented asynchronous order orchestration with RabbitMQ sequential chaining and manual AMQP acknowledgments to prevent message loss during downstream outages, paired with a React/TypeScript Client Portal and Driver App for real-time delivery tracking.'
+          ],
+          architectureFlow: 'Client Portal (:5173) / Driver App (:5174) → Spring Cloud Gateway (:8000) → Order Intake (:8001) → Order Processing (:8002) → RabbitMQ Sequential Chaining [cms.adapter.queue → SOAP/XML CMS (:8080) → wms.adapter.queue → TCP/IP WMS (:9090) → ros.adapter.queue → REST Cloud ROS (:8082)] → Notification & Tracking Service (:8007).'
+        },
+        {
+          id: 'ai-video-app',
+          title: 'Agentic AI Social Video Workflow (AI Video Application)',
+          subtitle: 'Multi-Agent LangGraph Content Pipeline with Model Context Protocol (MCP)',
+          category: 'ai-agents',
+          lens: ['all', 'ai-security'],
+          repoUrl: 'https://github.com/PamaliWeerasinghe/AI-Video-Application',
+          repoLabel: 'github.com/PamaliWeerasinghe/AI-Video-Application',
+          stack: ['Python', 'LangGraph', 'Groq API', 'FastAPI', 'Model Context Protocol (MCP)'],
+          bullets: [
+            'Engineered a multi-agent LangGraph workflow orchestrating niche selection, scriptwriting, JSON storyboard generation, and automated video scanning, captioning, and Facebook Page publishing via an MCP server.',
+            'Integrated Groq-powered LLM inference with a FastAPI event-monitoring dashboard and stateful file pipelines that archive published clips and storyboards to prevent duplicate uploads.'
+          ],
+          architectureFlow: 'Niche Selection Agent → Scriptwriter Agent → JSON Storyboard Generator → Video Scanner & Captioning Node → MCP Server Publisher (Facebook Graph API) + FastAPI Event Dashboard & Stateful Archive Pipeline.'
+        },
+        {
+          id: 'multimodal-rag',
+          title: 'Multimodal RAG System for Sri Lanka Tourism',
+          subtitle: 'Containerized Vector + Relational Retrieval-Augmented Generation Pipeline',
+          category: 'ai-agents',
+          lens: ['all', 'ai-security'],
+          repoUrl: 'https://github.com/sakiththewmika/RAG_App',
+          repoLabel: 'github.com/PamaliWeerasinghe/RAGApp',
+          stack: ['Python', 'Qdrant', 'PostgreSQL', 'Groq API', 'Streamlit', 'Docker Compose'],
+          bullets: [
+            'Built a containerized multimodal Retrieval-Augmented Generation (RAG) system for Sri Lanka tourism using Python, Docker Compose, PostgreSQL, and Qdrant to store and index structured attraction metadata, text descriptions, and captioned images.',
+            'Implemented database initialization, multimodal data ingestion, and Groq-powered retrieval pipelines, served through an interactive Streamlit web application.'
+          ],
+          architectureFlow: 'Multimodal Ingestion Pipeline (Attraction Metadata + Text + Captioned Images) → PostgreSQL (Structured Relational Store) + Qdrant (Dense Vector Index) → Groq LPU Inference → Interactive Streamlit Discovery UI.'
+        },
+        {
+          id: 'patch-defense-studio',
+          title: 'Patch Defense Studio & patch-defense-lib',
+          subtitle: 'Model-Agnostic Adversarial Patch Security Middleware & Web Testbed',
+          status: 'Ongoing',
+          category: 'security',
+          lens: ['all', 'ai-security'],
+          repoUrl: 'https://github.com/PamaliWeerasinghe',
+          repoLabel: 'Final Year Research Monorepo & Python Package',
+          stack: ['Python', 'PyTorch', 'YOLOv5/v8/11', 'OpenCV Telea', 'FastAPI', 'React', 'TypeScript', 'Docker'],
+          bullets: [
+            'Two-repository research architecture combining patch-defense-lib (standalone, model-agnostic Python security middleware) and Patch Defense Studio (React + TypeScript + FastAPI interactive evaluation workbench).',
+            'Renders interactive HTML5 Canvas bounding-box comparisons, Z-score feature-energy heatmaps, and real-time latency vs. confidence recovery telemetry across YOLOv5su, YOLOv8s, and YOLO11n.'
+          ],
+          architectureFlow: 'Input Frame → PyTorch Forward Hooks (patch-defense-lib) → Parallel Z-Score Energy & Mahalanobis Monitor → Synchronizer Gate → OpenCV Telea Restoration → FastAPI Telemetry Backend → React/Canvas Heatmaps & Recharts Workbench.'
+        }
+      ],
+
+      skills: [
+        {
+          category: 'languages',
+          title: 'Programming Languages',
+          accent: 'indigo',
+          items: [
+            { name: 'Python', context: 'Adversarial ML, LangGraph, Multimodal RAG, FastAPI' },
+            { name: 'Java', context: 'Spring Boot Microservices, Spring Cloud Gateway, AMQP' },
+            { name: 'TypeScript', context: 'React Client Portal, Driver App, Patch Defense Studio' },
+            { name: 'SQL', context: 'PostgreSQL Relational Modeling & Spatial/Tourism Queries' }
+          ]
+        },
+        {
+          category: 'ai',
+          title: 'AI, Agents & RAG',
+          accent: 'teal',
+          items: [
+            { name: 'LangGraph', context: 'Stateful Multi-Agent Social Video Orchestration' },
+            { name: 'Groq API', context: 'Low-Latency LLM Inference for RAG & Agent Pipelines' },
+            { name: 'Model Context Protocol (MCP)', context: 'Automated Agent Tooling & Social Publishing Server' },
+            { name: 'Multimodal RAG', context: 'Qdrant Vector + Captioned Image & Text Retrieval' },
+            { name: 'Streamlit', context: 'Interactive Multimodal Retrieval Web Interface' }
+          ]
+        },
+        {
+          category: 'middleware',
+          title: 'Middleware, Backend & Web',
+          accent: 'amber',
+          items: [
+            { name: 'Spring Boot & Spring Cloud Gateway', context: 'Microservices & WebFlux API Gateway (:8000)' },
+            { name: 'RabbitMQ (AMQP)', context: 'Sequential Chaining & Manual ACK Fault Tolerance' },
+            { name: 'FastAPI', context: 'Event-Monitoring Dashboards & ML Defense APIs' },
+            { name: 'React, Vite & Tailwind CSS', context: 'Real-Time Logistics & Security Testbed Frontends' },
+            { name: 'REST, SOAP/XML & TCP/IP', context: 'Heterogeneous Enterprise Protocol Bridging' }
+          ]
+        },
+        {
+          category: 'infra',
+          title: 'Databases, Containers & Tools',
+          accent: 'emerald',
+          items: [
+            { name: 'PostgreSQL & Qdrant', context: 'Relational Metadata & High-Dimensional Vector Search' },
+            { name: 'Docker & Docker Compose', context: 'Multi-Container RAG & Microservice Orchestration' },
+            { name: 'Conda', context: 'Isolated Deep Learning Environments (yolo_test_bed)' },
+            { name: 'Maven & Git', context: 'Java Build Lifecycle & GitHub Actions CI/CD' }
+          ]
+        }
+      ],
+
+      coursework: [
+        { name: 'Machine Learning & Neural Computing', cat: 'ai' },
+        { name: 'Natural Language Processing', cat: 'ai' },
+        { name: 'Cognitive Robotics', cat: 'ai' },
+        { name: 'Middleware Architecture', cat: 'systems' },
+        { name: 'Distributed Systems', cat: 'systems' },
+        { name: 'Parallel Computing', cat: 'systems' },
+        { name: 'Information System Security', cat: 'systems' },
+        { name: 'Computer Networks', cat: 'systems' },
+        { name: 'Data Structures & Algorithms', cat: 'se' },
+        { name: 'Object-Oriented Programming', cat: 'se' },
+        { name: 'Database Systems', cat: 'se' },
+        { name: 'Software Engineering', cat: 'se' },
+        { name: 'Software Quality Assurance', cat: 'se' },
+        { name: 'Human-Computer Interaction', cat: 'se' }
+      ]
+    };
+
+    // =========================================================================
+    // APPLICATION STATE
+    // =========================================================================
+    const state = {
+      activeLens: 'all',
+      pubFilter: 'all',
+      chartMode: 'verification',
+      projTag: 'all',
+      projSearch: '',
+      skillCat: 'all',
+      courseFilter: 'all'
+    };
+
+    let empiricalChartInstance = null;
+
+    // =========================================================================
+    // UTILITY: TOAST & CLIPBOARD
+    // =========================================================================
+    function showToast(message) {
+      const container = document.getElementById('toastContainer');
+      if (!container) return;
+      const toast = document.createElement('div');
+      toast.className = 'px-4 py-2.5 rounded-xl bg-slate-900 dark:bg-indigo-600 text-white text-xs sm:text-sm font-medium shadow-lg border border-slate-700 dark:border-indigo-400/30 transition-all duration-200';
+      toast.textContent = message;
+      container.appendChild(toast);
+      setTimeout(() => {
+        toast.style.opacity = '0';
+        setTimeout(() => toast.remove(), 250);
+      }, 2600);
+    }
+
+    function copyTextToClipboard(text, label) {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(() => {
+          showToast(label || 'Copied to clipboard!');
+        }).catch(() => fallbackCopy(text, label));
+      } else {
+        fallbackCopy(text, label);
+      }
+    }
+
+    function fallbackCopy(text, label) {
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      try {
+        document.execCommand('copy');
+        showToast(label || 'Copied to clipboard!');
+      } catch (err) {
+        showToast('Copy failed — please select and copy manually.');
+      }
+      document.body.removeChild(ta);
+    }
+
+    // =========================================================================
+    // RENDERERS
+    // =========================================================================
+    function renderPublications() {
+      const container = document.getElementById('publicationsList');
+      if (!container) return;
+
+      const filtered = PORTFOLIO_DATA.publications.filter(pub => {
+        if (state.pubFilter !== 'all' && pub.type !== state.pubFilter) return false;
+        return true;
+      });
+
+      container.innerHTML = filtered.map(pub => {
+        const isLensMatch = state.activeLens === 'all' || pub.lens.includes(state.activeLens);
+        const borderClass = isLensMatch
+          ? 'border-slate-200 dark:border-slate-800 hover:border-indigo-500/50'
+          : 'border-slate-200/50 dark:border-slate-800/50 opacity-75';
+
+        const linksHtml = (pub.links || []).map(l => `
+          <a href="${l.url}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-code bg-indigo-500/10 text-indigo-600 dark:text-indigo-300 border border-indigo-500/20 hover:bg-indigo-500/20 transition-colors">
+            <span>${l.label}</span>
+            <span>↗</span>
+          </a>
+        `).join('');
+
+        const bulletsHtml = pub.highlights.map(b => `
+          <li class="flex items-start gap-2 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 mt-2 shrink-0"></span>
+            <span>${b}</span>
+          </li>
+        `).join('');
+
+        return `
+          <article class="rounded-2xl border ${borderClass} bg-white dark:bg-slate-900/85 p-5 sm:p-6 shadow-sm transition-all space-y-3">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <span class="px-2.5 py-0.5 rounded-md text-xs font-code font-semibold bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 border border-indigo-500/20">${pub.badge}</span>
+              <span class="px-2.5 py-0.5 rounded-md text-[11px] font-semibold bg-emerald-500/10 text-emerald-700 dark:text-emerald-300 border border-emerald-500/20">${pub.awardBadge}</span>
+            </div>
+            <h3 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white leading-snug">${pub.title}</h3>
+            <p class="text-xs sm:text-sm text-slate-700 dark:text-slate-300">${pub.authors}</p>
+            <p class="text-xs italic text-slate-500 dark:text-slate-400">${pub.venue}</p>
+            <ul class="space-y-1.5 pt-1">${bulletsHtml}</ul>
+            ${linksHtml ? `<div class="flex flex-wrap items-center gap-2 pt-2">${linksHtml}</div>` : ''}
+          </article>
+        `;
+      }).join('');
+    }
+
+    function renderChart() {
+      const ctx = document.getElementById('empiricalChart');
+      if (!ctx || typeof Chart === 'undefined') return;
+
+      const isDark = document.documentElement.classList.contains('dark');
+      const textColor = isDark ? '#cbd5e1' : '#334155';
+      const gridColor = isDark ? 'rgba(148, 163, 184, 0.12)' : 'rgba(148, 163, 184, 0.25)';
+
+      if (empiricalChartInstance) {
+        empiricalChartInstance.destroy();
+      }
+
+      const subtitleEl = document.getElementById('chartSubtitle');
+
+      if (state.chartMode === 'verification') {
+        if (subtitleEl) {
+          subtitleEl.innerHTML = 'Comparison of line-by-line code verification rates between novice (1st-Year) and senior (4th-Year) undergraduate cohorts across implementation, constraint-driven algorithmic, and middleware architecture tasks (<a href="https://doi.org/10.5220/0014983500004015" target="_blank" rel="noopener noreferrer" class="text-indigo-500 underline hover:text-indigo-400">DOI: 10.5220/0014983500004015</a>).';
+        }
+        empiricalChartInstance = new Chart(ctx, {
+          type: 'bar',
+          data: {
+            labels: ['Fourth-Year Cohort (Senior)', 'First-Year Cohort (Novice)'],
+            datasets: [{
+              label: 'Line-by-Line Verification Rate (%)',
+              data: [65.38, 52.67],
+              backgroundColor: ['rgba(99, 102, 241, 0.85)', 'rgba(20, 184, 166, 0.85)'],
+              borderColor: ['#6366f1', '#14b8a6'],
+              borderWidth: 1.5,
+              borderRadius: 8
+            }]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+              legend: { display: false },
+              tooltip: {
+                callbacks: {
+                  label: (context) => `${context.parsed.y}% Line-by-Line Review`
+                }
+              }
+            },
+            scales: {
+              y: {
+                beginAtZero: true,
+                max: 100,
+                ticks: { color: textColor, callback: (val) => val + '%' },
+                grid: { color: gridColor }
+              },
+              x: {
+                ticks: { color: textColor },
+                grid: { display: false }
+              }
+            }
+          }
+        });
+      } else {
+        if (subtitleEl) {
+          subtitleEl.innerHTML = 'Sample composition across the ENASE 2026 mixed-method study (N = 157 survey participants; n = 20 screen-recorded quasi-experiment participants) and the >30% new empirical analyses in the Springer CCIS extended manuscript.';
+        }
+        empiricalChartInstance = new Chart(ctx, {
+          type: 'bar',
+          data: {
+            labels: ['Preliminary Survey (N)', 'Quasi-Experiment (n)', 'CCIS Extended Analyses (%)'],
+            datasets: [{
+              label: 'Study Metric',
+              data: [157, 20, 30],
+              backgroundColor: ['rgba(99, 102, 241, 0.85)', 'rgba(245, 158, 11, 0.85)', 'rgba(16, 185, 129, 0.85)'],
+              borderColor: ['#6366f1', '#f59e0b', '#10b981'],
+              borderWidth: 1.5,
+              borderRadius: 8
+            }]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+              legend: { display: false }
+            },
+            scales: {
+              y: {
+                beginAtZero: true,
+                ticks: { color: textColor },
+                grid: { color: gridColor }
+              },
+              x: {
+                ticks: { color: textColor },
+                grid: { display: false }
+              }
+            }
+          }
+        });
+      }
+    }
+
+    function renderProjects() {
+      const grid = document.getElementById('projectsGrid');
+      if (!grid) return;
+
+      const q = state.projSearch.trim().toLowerCase();
+      const filtered = PORTFOLIO_DATA.projects.filter(proj => {
+        if (state.projTag !== 'all' && proj.category !== state.projTag) return false;
+        if (q) {
+          const hay = (proj.title + ' ' + proj.subtitle + ' ' + proj.stack.join(' ') + ' ' + proj.bullets.join(' ')).toLowerCase();
+          if (!hay.includes(q)) return false;
+        }
+        return true;
+      });
+
+      if (filtered.length === 0) {
+        grid.innerHTML = `
+          <div class="lg:col-span-2 p-8 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-center space-y-2">
+            <div class="text-base font-bold text-slate-900 dark:text-white">No matching projects found</div>
+            <p class="text-xs text-slate-500">Try clearing the search filter or selecting "All (4)".</p>
+          </div>
+        `;
+        return;
+      }
+
+      grid.innerHTML = filtered.map(proj => {
+        const isLensMatch = state.activeLens === 'all' || proj.lens.includes(state.activeLens);
+        const cardBorder = isLensMatch
+          ? 'border-slate-200 dark:border-slate-800 hover:border-indigo-500/50'
+          : 'border-slate-200/50 dark:border-slate-800/50 opacity-75';
+
+        const stackBadges = proj.stack.map(s => `
+          <span class="px-2.5 py-0.5 rounded-md text-xs font-code bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200/70 dark:border-slate-700">${s}</span>
+        `).join('');
+
+        const bulletsHtml = proj.bullets.map(b => `
+          <li class="flex items-start gap-2 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 mt-2 shrink-0"></span>
+            <span>${b}</span>
+          </li>
+        `).join('');
+
+        return `
+          <article class="rounded-2xl border ${cardBorder} bg-white dark:bg-slate-900/85 p-6 shadow-sm flex flex-col justify-between space-y-5 transition-all">
+            <div class="space-y-3">
+              <div class="flex items-start justify-between gap-2">
+                <div>
+                  <span class="text-xs font-code text-indigo-600 dark:text-indigo-400 font-semibold">${proj.subtitle}</span>
+                  <h3 class="text-lg font-bold text-slate-900 dark:text-white mt-0.5">${proj.title}</h3>
+                </div>
+                ${proj.status ? `<span class="shrink-0 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-amber-500/10 text-amber-700 dark:text-amber-300 border border-amber-500/30">${proj.status}</span>` : ''}
+              </div>
+              <div class="flex flex-wrap gap-1.5">${stackBadges}</div>
+              <ul class="space-y-2 pt-1">${bulletsHtml}</ul>
+            </div>
+
+            ${proj.status ? '' : `<div class="pt-4 border-t border-slate-200/80 dark:border-slate-800 flex flex-wrap items-center justify-between gap-2">
+              <a href="${proj.repoUrl}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-code font-semibold text-indigo-600 dark:text-indigo-400 hover:underline">
+                <span>${proj.repoLabel}</span>
+                <span>↗</span>
+              </a>
+              <button type="button" data-project-modal="${proj.id}" class="open-proj-modal-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 dark:bg-slate-800 hover:bg-indigo-600 hover:text-white text-slate-700 dark:text-slate-200 transition-colors">
+                Inspect Architecture Flow
+              </button>
+            </div>`}
+          </article>
+        `;
+      }).join('');
+
+      document.querySelectorAll('.open-proj-modal-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const projId = btn.getAttribute('data-project-modal');
+          openProjectModal(projId);
+        });
+      });
+    }
+
+    function openProjectModal(projId) {
+      const proj = PORTFOLIO_DATA.projects.find(p => p.id === projId);
+      if (!proj) return;
+      document.getElementById('projectModalSubtitle').textContent = proj.subtitle;
+      document.getElementById('projectModalTitle').textContent = proj.title;
+
+      const body = document.getElementById('projectModalBody');
+      body.innerHTML = `
+        <div class="p-4 rounded-xl bg-slate-100 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 space-y-1.5">
+          <div class="text-xs font-code uppercase text-indigo-600 dark:text-indigo-400 font-semibold">End-to-End System Data &amp; Protocol Flow</div>
+          <p class="font-code text-xs text-slate-800 dark:text-slate-200 leading-relaxed">${proj.architectureFlow}</p>
+        </div>
+        <div class="space-y-2">
+          <div class="text-xs font-code uppercase text-slate-500 font-semibold">Key Engineering Contributions</div>
+          <ul class="space-y-2">
+            ${proj.bullets.map(b => `<li class="flex items-start gap-2 text-xs sm:text-sm"><span class="w-1.5 h-1.5 rounded-full bg-indigo-500 mt-2 shrink-0"></span><span>${b}</span></li>`).join('')}
+          </ul>
+        </div>
+        <div class="pt-2 flex items-center justify-between">
+          <a href="${proj.repoUrl}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-indigo-600 text-white text-xs font-semibold hover:bg-indigo-500 transition-colors">
+            <span>View GitHub Repository</span>
+            <span>↗</span>
+          </a>
+        </div>
+      `;
+
+      const modal = document.getElementById('projectModal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function renderSkills() {
+      const container = document.getElementById('skillsContainer');
+      if (!container) return;
+
+      const filtered = PORTFOLIO_DATA.skills.filter(s => state.skillCat === 'all' || s.category === state.skillCat);
+      container.className = filtered.length === 1
+        ? 'grid grid-cols-1 gap-5'
+        : 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5';
+
+      container.innerHTML = filtered.map(group => `
+        <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/85 p-5 space-y-4">
+          <div class="font-bold text-sm text-slate-900 dark:text-white border-b border-slate-200 dark:border-slate-800 pb-2.5">
+            ${group.title}
+          </div>
+          <div class="space-y-3">
+            ${group.items.map(item => `
+              <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-950/80 border border-slate-200/70 dark:border-slate-800/80">
+                <div class="font-code text-xs font-bold text-indigo-600 dark:text-indigo-400">${item.name}</div>
+                <div class="text-[11px] text-slate-600 dark:text-slate-400 mt-0.5 leading-snug">${item.context}</div>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function renderCoursework() {
+      const container = document.getElementById('courseworkPills');
+      if (!container) return;
+
+      const filtered = PORTFOLIO_DATA.coursework.filter(c => state.courseFilter === 'all' || c.cat === state.courseFilter);
+      container.innerHTML = filtered.map(c => `
+        <span class="px-3 py-1.5 rounded-xl text-xs font-medium bg-slate-100 dark:bg-slate-950 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-800">
+          ${c.name}
+        </span>
+      `).join('');
+    }
+
+    // =========================================================================
+    // EVENT LISTENERS & INITIALIZATION
+    // =========================================================================
+    function initPortfolio() {
+      // Safe theme initialization
+      try {
+        const savedTheme = localStorage.getItem('pamali_portfolio_theme');
+        if (savedTheme === 'light') {
+          document.documentElement.classList.remove('dark');
+        }
+      } catch (e) {
+        // Ignore storage restrictions
+      }
+
+      // Theme Toggle
+      document.getElementById('themeToggleBtn').addEventListener('click', () => {
+        const isDark = document.documentElement.classList.toggle('dark');
+        try {
+          localStorage.setItem('pamali_portfolio_theme', isDark ? 'dark' : 'light');
+        } catch (e) {}
+        renderChart();
+      });
+
+      // Mobile Menu Drawer
+      const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+      const mobileMenuDrawer = document.getElementById('mobileMenuDrawer');
+      mobileMenuBtn.addEventListener('click', () => {
+        mobileMenuDrawer.classList.toggle('hidden');
+      });
+      document.querySelectorAll('.mobile-nav-link').forEach(link => {
+        link.addEventListener('click', () => mobileMenuDrawer.classList.add('hidden'));
+      });
+
+      // Focus Lens Buttons
+      document.querySelectorAll('.lens-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          state.activeLens = btn.getAttribute('data-lens');
+          document.getElementById('lensSummaryText').innerHTML = PORTFOLIO_DATA.lenses[state.activeLens];
+          document.querySelectorAll('.lens-btn').forEach(b => {
+            if (b.getAttribute('data-lens') === state.activeLens) {
+              b.className = 'lens-btn px-2.5 py-1 rounded-md text-xs font-semibold bg-indigo-600 text-white shadow-sm transition-all';
+            } else {
+              b.className = 'lens-btn px-2.5 py-1 rounded-md text-xs font-semibold bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:border-indigo-400 transition-all';
+            }
+          });
+          renderPublications();
+          renderProjects();
+        });
+      });
+
+      // Hero Email Copy
+      document.getElementById('copyEmailHeroBtn').addEventListener('click', () => {
+        copyTextToClipboard('pamaliweerasinghe@gmail.com', 'Copied pamaliweerasinghe@gmail.com!');
+      });
+
+      // Generic Copy Buttons
+      document.querySelectorAll('.copy-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const val = btn.getAttribute('data-copy');
+          copyTextToClipboard(val, `Copied ${val}!`);
+        });
+      });
+
+      // Publication Filters
+      document.querySelectorAll('.pub-filter-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          state.pubFilter = btn.getAttribute('data-pub-filter');
+          document.querySelectorAll('.pub-filter-btn').forEach(b => {
+            if (b.getAttribute('data-pub-filter') === state.pubFilter) {
+              b.className = 'pub-filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-indigo-600 text-white transition-all';
+            } else {
+              b.className = 'pub-filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800 hover:border-indigo-400 transition-all';
+            }
+          });
+          renderPublications();
+        });
+      });
+
+      // Chart Mode Switcher
+      document.querySelectorAll('.chart-mode-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          state.chartMode = btn.getAttribute('data-chart-mode');
+          document.querySelectorAll('.chart-mode-btn').forEach(b => {
+            if (b.getAttribute('data-chart-mode') === state.chartMode) {
+              b.className = 'chart-mode-btn px-2.5 py-1 rounded-md text-xs font-semibold bg-indigo-600 text-white transition-all';
+            } else {
+              b.className = 'chart-mode-btn px-2.5 py-1 rounded-md text-xs font-semibold text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all';
+            }
+          });
+          renderChart();
+        });
+      });
+
+      // Project Search & Category Filter
+      document.getElementById('projectSearchInput').addEventListener('input', (e) => {
+        state.projSearch = e.target.value;
+        renderProjects();
+      });
+
+      document.querySelectorAll('.proj-tag-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          state.projTag = btn.getAttribute('data-proj-tag');
+          document.querySelectorAll('.proj-tag-btn').forEach(b => {
+            if (b.getAttribute('data-proj-tag') === state.projTag) {
+              b.className = 'proj-tag-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-indigo-600 text-white transition-all';
+            } else {
+              b.className = 'proj-tag-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800 hover:border-indigo-400 transition-all';
+            }
+          });
+          renderProjects();
+        });
+      });
+
+      // Skill Category Tabs
+      document.querySelectorAll('.skill-cat-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          state.skillCat = btn.getAttribute('data-skill-cat');
+          document.querySelectorAll('.skill-cat-btn').forEach(b => {
+            if (b.getAttribute('data-skill-cat') === state.skillCat) {
+              b.className = 'skill-cat-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-indigo-600 text-white transition-all';
+            } else {
+              b.className = 'skill-cat-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800 hover:border-indigo-400 transition-all';
+            }
+          });
+          renderSkills();
+        });
+      });
+
+      // Coursework Filter Buttons
+      document.querySelectorAll('.course-filter-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          state.courseFilter = btn.getAttribute('data-course-filter');
+          document.querySelectorAll('.course-filter-btn').forEach(b => {
+            if (b.getAttribute('data-course-filter') === state.courseFilter) {
+              b.className = 'course-filter-btn px-2.5 py-1 rounded-md text-xs font-semibold bg-indigo-600 text-white';
+            } else {
+              b.className = 'course-filter-btn px-2.5 py-1 rounded-md text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300';
+            }
+          });
+          renderCoursework();
+        });
+      });
+
+      // Inquiry Composer Buttons
+      document.getElementById('copyInquiryBtn').addEventListener('click', () => {
+        const sender = document.getElementById('inquiryName').value.trim() || 'Prospective Collaborator';
+        const topic = document.getElementById('inquiryTopic').value;
+        const body = document.getElementById('inquiryBody').value.trim() || 'Hi Pamali, I reviewed your portfolio and would love to connect.';
+        const formatted = `Subject: ${topic} — Inquiry from ${sender}\nTo: pamaliweerasinghe@gmail.com\n\n${body}`;
+        copyTextToClipboard(formatted, 'Copied formatted inquiry message!');
+      });
+
+      document.getElementById('sendMailtoBtn').addEventListener('click', () => {
+        const sender = document.getElementById('inquiryName').value.trim() || 'Prospective Collaborator';
+        const topic = document.getElementById('inquiryTopic').value;
+        const body = document.getElementById('inquiryBody').value.trim() || 'Hi Pamali, I reviewed your portfolio and would love to connect.';
+        const mailto = `mailto:pamaliweerasinghe@gmail.com?subject=${encodeURIComponent(topic + ' — ' + sender)}&body=${encodeURIComponent(body)}`;
+        window.open(mailto, '_blank');
+      });
+
+      // Modals (BibTeX, CV Audit, Project Deep Dive)
+      const bibtexModal = document.getElementById('bibtexModal');
+      const auditModal = document.getElementById('auditModal');
+      const projectModal = document.getElementById('projectModal');
+
+      document.getElementById('openBibtexModalBtn').addEventListener('click', () => {
+        bibtexModal.classList.remove('hidden');
+        bibtexModal.classList.add('flex');
+      });
+      document.getElementById('closeBibtexModalBtn').addEventListener('click', () => {
+        bibtexModal.classList.add('hidden');
+        bibtexModal.classList.remove('flex');
+      });
+
+      document.getElementById('openAuditModalBtn').addEventListener('click', () => {
+        auditModal.classList.remove('hidden');
+        auditModal.classList.add('flex');
+      });
+      document.getElementById('closeAuditModalBtn').addEventListener('click', () => {
+        auditModal.classList.add('hidden');
+        auditModal.classList.remove('flex');
+      });
+      document.getElementById('ackAuditModalBtn').addEventListener('click', () => {
+        auditModal.classList.add('hidden');
+        auditModal.classList.remove('flex');
+      });
+
+      document.getElementById('closeProjectModalBtn').addEventListener('click', () => {
+        projectModal.classList.add('hidden');
+        projectModal.classList.remove('flex');
+      });
+
+      document.querySelectorAll('.copy-target-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const targetId = btn.getAttribute('data-copy-target');
+          const el = document.getElementById(targetId);
+          if (el) copyTextToClipboard(el.textContent, 'Copied BibTeX citation!');
+        });
+      });
+
+      // Initial Render
+      renderPublications();
+      renderChart();
+      renderProjects();
+      renderSkills();
+      renderCoursework();
+    }
+
+    window.addEventListener('DOMContentLoaded', initPortfolio);
+  </script>
+
+</body></html>
